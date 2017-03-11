@@ -233,11 +233,23 @@ a[href^=tel] {
 /* Terminals */
 
 .terminals {
+  position: relative;
   min-height: 900px;
 }
 
 .terminals h2 {
+  line-height: 100px;
   text-align: center;
+}
+
+.terminals iframe {
+  position: relative;
+  left: calc(50% - 960px);
+}
+
+.terminals__location {
+  position: absolute;
+  top: -800px;
 }
 
 .terminals__location-button {
@@ -255,7 +267,7 @@ a[href^=tel] {
 .terminals__location-list {
   overflow-y: scroll;
   width: 180px;
-  height: 400px;
+  height: 730px;
   background-color: #e3e4e8;
 }
 
