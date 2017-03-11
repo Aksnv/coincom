@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'proxima_nova_rgregular';
+  font-size: 15px;
+  font-weight: 400; */
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  outline: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a[href^=tel] {
+  text-decoration: none;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    color: #ccc;
+    background: #ccc;
+}
+
+.container {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Header */
+
+.header {
+  overflow: hidden;
+}
+
+.header__logo,
+.header__menu {
+  float: left;
+}
+
+.header__menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header__contacts {
+  float: right;
+}
+
+/* Promo */
+
+.promo {
+  clear: both;
+}
+
+/* Partnership */
+
+.partnership-form {
+  width: 580px;
+}
+
+.partnership-form__field {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.partnership-form label {
+  display: block;
+}
+
+#partnership-form__comment {
+  width: 580px;
+}
+
+/* How-it-works */
+
+.how-it-works li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+/* Terminals */
+
+.terminals__location-list {
+  width: 200px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+/* Offer */
+
+.offer li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+}
+
+.footer__social li {
+  display: inline-block;
+  vertical-align: top;
+}
