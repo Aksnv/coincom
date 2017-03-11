@@ -2,9 +2,146 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Монетная компания - сервис по приему монет</title>
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="#">Монетная компания</a>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Как это работает</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Оферта</a></li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <p class="header__contacts-phone"><strong>+7 (495) 998-04-93</strong></p>
+        <p><a class="header__contacts-email" href="mailto:info@coincom.ru">info@coincom.ru</a></p>
+      </div>
+    </div>
+  </header>
+  <section class="promo">
+    <h1>Терминал по приёму монет</h1>
+    <h2>Новый формат платежных терминалов.</h2>
+  </section>
+  <section class="about">
+    <h2>О компании</h2>
+    <p>Мы динамично развивающаяся компания, специализирующаяся на установке и обслуживании терминалов по приему монет. У многих из нас постоянно скапливается огромное количество мелочи: в банках, копилках, пепельницах, карманах пальто, коробках из под обуви и пр. Выбрасывать монеты жалко, платить на кассе в магазине неудобно и долго, обменять сложно - большинство банков неохотно идут на размен монеты. Наша услуга позволяет с легкостью и комфортом получить дополнительную выгоду от монет, которым вы давно не можете найти применение.</p>
+    <div class="about__comment">
+      <p>Кстати, в литровую банку помещается ~<strong>7000 рублей</strong> десятирублевыми монетками.</p>
+    </div>
+  </section>
+  <section class="partnership">
+    <h2>Сотрудничество</h2>
+    <p>Хотите стать нашим партнером? Отправьте заявку на сотрудничество.</p>
+    <form name="partnership-form" action="#" method="POST">
+      <label>Компания</label>
+      <input type="text" name="partnership-form__company">
+      <label>Контактное лицо</label>
+      <input type="text" name="partnership-form__name">
+      <label>Электронная почта</label>
+      <input type="email" name="partnership-form__email">
+      <label>Контактный телефон</label>
+      <input type="tel" name="partnership-form__phone">
+      <label>Описание запроса</label>
+      <input type="text" name="partnership-form__comment">
+      <input type="submit" name="partnership-form__submit" value="Отправить сообщение">
+    </form>
+  </section>
+  <section class="how-it-works">
+    <h2>Как это работает</h2>
+    <ul>
+      <li>Аппарат по приему монет размещается в торговых галереях</li>
+      <li>Клиент, не сортируя, высыпает мелочь в аппарат</li>
+      <li>Аппарат пересчитывает монеты и переводит сумму на телефон, банковскую карту и т.п.</li>
+      <li>Клиент становится пользователем сервиса и постоянным посетителем ТЦ!</li>
+    </ul>
+    <div class="how-it-works__comment">
+      <p>По опыту работы, основной аудиторией сервиса являются молодые мамы с детьми.</p>
+    </div>
+    <div class="how-it-works__advantage">
+      <p>Наш сервис привлечет дополнительных покупателей и оставит положительные воспоминания о посещении торгового центра.</p>
+    </div>
+  </section>
+  <section class="terminals">
+    <h2>Адреса мест установки терминалов</h2>
+    <div class="terminals__map"></div>
+    <div class="terminals__location">
+      <button class="terminals__location-button">Свернуть список</button>
+      <ul class="terminals__location-list">
+        <li>
+          <p class="mall-name">ТЦ &laquo;Азовский&raquo;</p>
+          <p class="mall-address">ул. Азовская, 24, корп. 3</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Гудзон&raquo;</p>
+          <p class="mall-address">Каширское шоссе, 14</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Вегас Москва&raquo;</p>
+          <p class="mall-address">МКАД, 24-й километр</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
+          <p class="mall-address">Пересечение 91 км МКАД и Осташковского шоссе</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
+          <p class="mall-address">Новорижское шоссе, 9 км от МКАД</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
+          <p class="mall-address">МКАД, 24-й километр</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Июнь&raquo;</p>
+          <p class="mall-address">Московская область, г. Мытищи, ул. Мира, 51</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Бум&raquo;</p>
+          <p class="mall-address">ул. Перерва, 43, корп. 1</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Хорошо&raquo;</p>
+          <p class="mall-address">Хорошевское шоссе, 27</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Вегас Крокус&raquo;</p>
+          <p class="mall-address">ул. Международная, 12</p>
+        </li>
+        <li>
+          <p class="mall-name">ТЦ &laquo;Колумбус&raquo;</p>
+          <p class="mall-address">ул. Кировоградская, 13</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="offer">
+    <h2>Мы предлагаем вам:</h2>
+    <ul>
+      <li>Дополнительную рекламную компанию за наш счет</li>
+      <li>Привлечение дополнительных клиентов</li>
+      <li>Повышение лояльности существующих клиентов</li>
+      <li>Возможность организации партнерской программы с ТЦ, карты лояльности, благотворительные акции и т.д.</li>
+    </ul>
+    <p>Узнайте больше о всех преимуществах сервиса:</p>
+    <p><strong>+7 (495) 998-04-93</strong></p>
+  </section>
+  <footer class="footer">
+    <h3>Присоединяйтесь к нам в социальных сетях</h3>
+    <ul class="footer__social">
+      <li><a class="social-link social-linl--vk" href="#">ВКонтакте</a></li>
+      <li><a class="social-link social-linl--fb" href="#">Фейсбук</a></li>
+      <li><a class="social-link social-linl--tw" href="#">Твиттер</a></li>
+      <li><a class="social-link social-linl--ig" href="#">Инстаграмм</a></li>
+      <li><a class="social-link social-linl--gp" href="#">Гугл+</a></li>
+    </ul>
+    <p class="footer__offer"><a href="#">Публичная оферта</a></p>
+  </footer>
 </body>
 </html>
