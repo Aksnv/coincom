@@ -13,11 +13,11 @@
       </div>
       <nav class="header__menu">
         <ul>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Сотрудничество</a></li>
-          <li><a href="#">Как это работает</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Оферта</a></li>
+          <li><a class="header__menu-link header__menu-link--about header__menu-link--active" href="#about">О компании</a></li>
+          <li><a class="header__menu-link header__menu-link--partnership" href="#partnership">Сотрудничество</a></li>
+          <li><a class="header__menu-link header__menu-link--how-it-works" href="#how-it-works">Как это работает</a></li>
+          <li><a class="header__menu-link header__menu-link--terminals" href="#terminals">Контакты</a></li>
+          <li><a class="header__menu-link header__menu-link--offer" href="#offer">Оферта</a></li>
         </ul>
       </nav>
       <div class="header__contacts">
@@ -29,12 +29,12 @@
 
   <section class="promo">
     <div class="container">
-      <h1>Терминал по приёму монет</h1>
+      <h1>Терминал по&nbsp;приёму монет</h1>
       <h2>Новый формат платежных терминалов.</h2>
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <h2>О компании</h2>
       <p>Мы динамично развивающаяся компания, специализирующаяся на установке и обслуживании терминалов по приему монет. У многих из нас постоянно скапливается огромное количество мелочи: в банках, копилках, пепельницах, карманах пальто, коробках из под обуви и пр. Выбрасывать монеты жалко, платить на кассе в магазине неудобно и долго, обменять сложно - большинство банков неохотно идут на размен монеты. Наша услуга позволяет с легкостью и комфортом получить дополнительную выгоду от монет, которым вы давно не можете найти применение.</p>
@@ -44,37 +44,39 @@
     </div>
   </section>
 
-  <section class="partnership">
+  <section id="partnership" class="partnership">
     <div class="container">
-      <h2>Сотрудничество</h2>
-      <p>Хотите стать нашим партнером? Отправьте заявку на сотрудничество.</p>
-      <form class="partnership-form" name="partnership-form" action="#" method="POST">
-        <div class="partnership-form__field">
-          <label for="partnership-form__company">Компания</label>
-          <input id="partnership-form__company" type="text" name="partnership-form__company">
-        </div>
-        <div class="partnership-form__field">
-          <label for="partnership-form__name">Контактное лицо</label>
-          <input id="partnership-form__name" type="text" name="partnership-form__name">
-        </div>
-        <div class="partnership-form__field">
-          <label for="partnership-form__email">Электронная почта</label>
-          <input id="partnership-form__email" type="email" name="partnership-form__email">
-        </div>
-        <div class="partnership-form__field">
-          <label for="partnership-form__phone">Контактный телефон</label>
-          <input id="partnership-form__phone" type="tel" name="partnership-form__phone">
-        </div>
-        <div class="partnership-form__field">
-          <label for="partnership-form__comment">Описание запроса</label>
-          <input id="partnership-form__comment" type="text" name="partnership-form__comment">
-        </div>        
-        <input type="submit" name="partnership-form__submit" value="Отправить сообщение">
-      </form>
+      <div class="partnership__inner">
+        <h2>Сотрудничество</h2>
+        <p>Хотите стать нашим партнером? Отправьте заявку на сотрудничество.</p>
+        <form class="partnership-form" name="partnership-form" action="#" method="POST">
+          <div class="partnership-form__field">
+            <label for="partnership-form__company">Компания</label>
+            <input id="partnership-form__company" type="text" name="partnership-form__company">
+          </div>
+          <div class="partnership-form__field">
+            <label for="partnership-form__name">Контактное лицо</label>
+            <input id="partnership-form__name" type="text" name="partnership-form__name">
+          </div>
+          <div class="partnership-form__field">
+            <label for="partnership-form__email">Электронная почта</label>
+            <input id="partnership-form__email" type="email" name="partnership-form__email">
+          </div>
+          <div class="partnership-form__field">
+            <label for="partnership-form__phone">Контактный телефон</label>
+            <input id="partnership-form__phone" type="tel" name="partnership-form__phone">
+          </div>
+          <div class="partnership-form__field">
+            <label for="partnership-form__comment">Описание запроса</label>
+            <input id="partnership-form__comment" type="text" name="partnership-form__comment">
+          </div>        
+          <input type="submit" name="partnership-form__submit" value="Отправить сообщение">
+        </form>
+      </div>
     </div>
   </section>
 
-  <section class="how-it-works">
+  <section id="how-it-works" class="how-it-works">
     <div class="container">
       <h2>Как это работает</h2>
       <ul>
@@ -92,7 +94,7 @@
     </div>
   </section>
 
-  <section class="terminals">
+  <section id="terminals" class="terminals">
     <div class="container">
       <h2>Адреса мест установки терминалов</h2>
       <div class="terminals__map"></div>
@@ -148,7 +150,7 @@
     </div>
   </section>
 
-  <section class="offer">
+  <section id="offer" class="offer">
     <div class="container">
       <h2>Мы предлагаем вам:</h2>
       <ul>
