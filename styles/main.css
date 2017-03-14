@@ -16,6 +16,11 @@ h1, h2, h3 {
   margin: 0;
 }
 
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -192,8 +197,6 @@ a[href^=tel] {
   top: 334px;
   right: 209px;
   width: 375px;
-  font-size: 30px;
-  font-weight: 300;
   text-align: left;
 }
 
@@ -209,8 +212,6 @@ a[href^=tel] {
 }
 
 .about h2 {
-  font-size: 30px;
-  font-weight: 400;
   padding-top: 54px;
   padding-bottom: 25px;
 }
@@ -297,6 +298,19 @@ a[href^=tel] {
   text-align: center;
 }
 
+.how-it-works::before {
+  position: absolute;
+  left: calc(50% - 366px);
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 254px;
+  height: 325px;
+  background-image: url("../images/sprite.png");
+  background-position: -259px -94px;
+  z-index: 2;
+}
+
 .how-it-works::after {
   position: absolute;
   top: 668px;
@@ -308,10 +322,93 @@ a[href^=tel] {
   background-color: #fab500;
 }
 
-.how-it-works li {
+.how-it-works h2 {
+  padding-top: 54px;
+  padding-bottom: 307px;
+}
+
+.how-it-works ul {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.how-it-works__step {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 200px;
+  text-align: center;
+}
+
+.how-it-works__step::before {
+  position: absolute;
+  top: -253px;
+  content: "";
+  display: block;
+  width: 210px;
+  height: 227px;
+}
+
+.how-it-works__step--1 {
+  width: 192px;
+  margin-left: 31px;
+  margin-right: 146px;
+}
+
+.how-it-works__step--1::before {
+  left: 2px;
+  background-image: url("../images/how-it-work_1.png");
+}
+
+.how-it-works__step--2 {
+  width: 152px;
+  margin-right: 107px;
+}
+
+.how-it-works__step--2::before {
+  left: -40px;
+  background-image: url("../images/how-it-work_2.png");
+}
+
+.how-it-works__step--3 {
+  width: 202px;
+  margin-right: 107px;
+}
+
+.how-it-works__step--3::before {
+  left: -3px;
+  background-image: url("../images/how-it-work_3.png");
+}
+
+.how-it-works__step--4 {
+  width: 164px;
+}
+
+.how-it-works__step--4::before {
+  left: -16px;
+  background-image: url("../images/how-it-work_4.png");
+}
+
+.how-it-works__comment,
+.how-it-works__advantage {
+  position: absolute;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.how-it-works__comment {
+  left: calc(50% - -7px);
+  bottom: -142px;
+  width: 373px;
+}
+
+.how-it-works__advantage {
+  left: calc(50% - -9px);
+  bottom: -320px;
+  width: 431px;
+  font-weight: 700;
+  z-index: 2;
 }
 
 /* Terminals */
