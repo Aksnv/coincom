@@ -3,9 +3,9 @@
 }
 
 body {
-  /* font-family: 'proxima_nova_rgregular';
+  font-family: sans-serif;
   font-size: 15px;
-  font-weight: 400; */
+  font-weight: 400; 
   margin: 0;
   padding: 0;
   color: #000;
@@ -84,12 +84,32 @@ a[href^=tel] {
   float: left;
 }
 
+.header__logo {
+  margin-top: 16px;
+  margin-right: 70px;
+}
+
+.header__logo-link {
+  display: block;
+  width: 150px;
+  height: 99px;
+  background-image: url("../images/sprite.png");
+  background-position: 0 0;
+}
+
+.header__menu {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .header__menu ul {
   overflow: hidden;
 }
 
 .header__menu li {
   float: left;
+  padding: 0 10px;
 }
 
 .header__menu-link {
@@ -98,7 +118,6 @@ a[href^=tel] {
   line-height: 130px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 10px;
   border-bottom: 3px solid transparent;
   color: #000;
 }
@@ -114,17 +133,19 @@ a[href^=tel] {
 
 .header__contacts-phone {
   font-size: 30px;
+  margin-top: 43px;
 }
 
 .header__contacts-email {
-  color: #ffb300;
+  float: right;
+  font-size: 12px;
+  line-height: 12px;
+  color: #f9b500;
 }
 
 .header__contacts-email:hover {
   opacity: 0.5;
 }
-
-
 
 /* Promo */
 
