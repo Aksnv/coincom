@@ -46,7 +46,6 @@ body {
   max-width: 1890px;
   font-family: 'museo_sans_cyrl500', sans-serif;
   font-size: 15px;
-  font-weight: 500;
   margin: 0 auto;
   padding: 0;
   color: #000;
@@ -145,8 +144,8 @@ a[href^=tel] {
 }
 
 .header__menu {
+  font-family: 'museo_sans_cyrl900';
   font-size: 14px;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -179,12 +178,14 @@ a[href^=tel] {
 }
 
 .header__contacts-phone {
+  font-family: 'museo_sans_cyrl900';
   font-size: 30px;
-  margin-top: 43px;
+  margin-top: 42px;
 }
 
 .header__contacts-email {
   float: right;
+  font-family: 'museo_sans_cyrl700';
   font-size: 12px;
   line-height: 12px;
   color: #f9b500;
@@ -202,7 +203,7 @@ a[href^=tel] {
   min-height: 670px;
   background-image: url("../images/mall.png"), url("../images/bg.png");
   background-repeat: no-repeat, repeat;
-  background-position: calc(50% - 468px), center;
+  background-position: calc(50% - 486px) -130px, center;
   background-color: #fab500;
   border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   box-shadow: 10px 0 0 #fff, -10px 0 0 #fff, 0 0 10px #999;
@@ -225,18 +226,20 @@ a[href^=tel] {
 }
 
 .promo h1 {
-  top: 148px;
+  top: 151px;
   right: 0;
   width: 585px;
+  font-family: 'museo_sans_cyrl900';
   font-size: 60px;
   font-weight: 900;
   line-height: 72px;
 }
 
 .promo h2 {
-  top: 334px;
-  right: 209px;
-  width: 375px;
+  top: 332px;
+  right: 205px;
+  width: 380px;
+  line-height: 36px;
   text-align: left;
 }
 
