@@ -56,6 +56,7 @@ h1, h2, h3 {
 }
 
 h2 {
+  font-family: 'museo_sans_cyrl500';
   font-size: 30px;
   font-weight: 300;
 }
@@ -255,19 +256,20 @@ a[href^=tel] {
 }
 
 .about h2 {
-  padding-top: 54px;
+  padding-top: 53px;
   padding-bottom: 25px;
 }
 
 .about p {
-  width: 1160px;
+  width: 1170px;
   font-size: 18px;
   line-height: 24px;
+  margin: 0 auto;
 }
 
 .about__comment {
   position: absolute;
-  top: 555px;
+  top: 556px;
   right: 338px;
   width: 200px;
   text-align: left;
@@ -275,7 +277,7 @@ a[href^=tel] {
 
 .about__comment::before {
   position: absolute;
-  top: -84px;
+  top: -85px;
   left: -91px;
   content: "";
   display: block;
@@ -315,19 +317,95 @@ a[href^=tel] {
   float: right;
 }
 
+.partnership__inner h2 {
+  padding-top: 74px;
+}
+
+.partnership__inner p {
+  font-weight: 700;
+  padding-bottom: 28px;
+}
+
 .partnership-form {
   width: 580px;
 }
 
 .partnership-form__field {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.partnership-form__field:nth-of-type(even) {
+  margin-right: 0;
 }
 
 .partnership-form label {
   display: block;
+  font-family: 'museo_sans_cyrl700';
+  font-size: 14px;
+  padding-bottom: 8px;
 }
+
+.partnership-form input {
+  width: 280px;
+  height: 42px;
+  font-family: 'museo_sans_cyrl700';
+  font-size: 14px;
+  line-height: 60px;
+  padding: 0 10px;
+  color: #333;
+  background-color: #fff;
+  border: 3px solid #fff;
+  outline: none;
+}
+
+.partnership-form input:focus {
+  border: 3px solid #ed1c24;
+}
+
+.partnership-form input[type="submit"] {
+  width: 328px;
+  height: 60px;
+  font-family: 'museo_sans_cyrl700';
+  font-size: 16px;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-left: 124px;
+  background-color: #ed1c24;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.partnership-form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* .partnership-form input::-webkit-input-placeholder {
+  font-family: 'museo_sans_cyrl700';
+  font-size: 14px;
+  line-height: 60px;
+  color: #999;
+}
+
+.partnership-form input:-ms-input-placeholder {
+  font-family: 'museo_sans_cyrl700';
+  font-size: 14px;
+  line-height: 60px;
+  color: #999;
+}
+
+.partnership-form input::-ms-input-placeholder {
+  font-family: 'museo_sans_cyrl700';
+  font-size: 14px;
+  line-height: 60px;
+  color: #999;
+} */
 
 #partnership-form__comment {
   width: 580px;
