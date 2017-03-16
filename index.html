@@ -102,15 +102,15 @@
       <div class="terminals__location">
         <button class="terminals__location-button terminals__location-button--open">Свернуть список</button>
         <ul class="terminals__location-list">
-          <li>
+          <li id="terminal">
             <p class="mall-name">ТЦ &laquo;Азовский&raquo;</p>
             <p class="mall-address">ул. Азовская, 24, корп. 3</p>
           </li>
-          <li>
+          <li id="terminal2">
             <p class="mall-name">ТЦ &laquo;Гудзон&raquo;</p>
             <p class="mall-address">Каширское шоссе, 14</p>
           </li>
-          <li>
+          <li id="terminal3">
             <p class="mall-name">ТЦ &laquo;Вегас Москва&raquo;</p>
             <p class="mall-address">МКАД, 24-й километр</p>
           </li>
@@ -377,6 +377,12 @@
             infowindow.open(map, marker);
           });
 
+          var terminal = document.getElementById('terminal');
+          terminal.addEventListener('click', function() {
+            infowindow.open(map, marker);
+          });
+
+
           var marker2 = new google.maps.Marker({
               position: {lat: 55.664040, lng: 37.627655},
               map: map,
@@ -397,6 +403,39 @@
 
           google.maps.event.addListener(marker2, 'click', function() {
             infowindow2.open(map, marker2);
+          });
+
+          var terminal2 = document.getElementById('terminal2');
+          terminal2.addEventListener('click', function() {
+            infowindow2.open(map, marker2);
+          });
+
+
+          var marker3 = new google.maps.Marker({
+              position: {lat: 55.585974, lng: 37.722791},
+              map: map,
+              title: 'ТЦ "ВЕГАС МОСКВА" - МКАД, 24-й километр',
+              icon: 'images/marker.png'
+          });
+
+          var contentString3 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Вегас Москва&raquo;</h1>'+
+                              '<p><b>Адрес:</b> МКАД 24 км (внешн.), владение 1, Москва, 142715</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://kashirskoe.vegas-city.ru/" target="_blank">kashirskoe.vegas-city.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 727-12-77</p>'+
+                              '</div>';
+
+          var infowindow3 = new google.maps.InfoWindow({
+               content: contentString3
+          });
+
+          google.maps.event.addListener(marker3, 'click', function() {
+            infowindow3.open(map, marker3);
+          });
+
+          var terminal3 = document.getElementById('terminal3');
+          terminal3.addEventListener('click', function() {
+            infowindow3.open(map, marker3);
           });
       }
   </script>
