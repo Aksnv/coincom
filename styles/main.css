@@ -140,6 +140,7 @@ a[href^=tel] {
   display: block;
   width: 150px;
   height: 99px;
+  font-size: 0;
   background-image: url("../images/sprite.png");
   background-position: 0 0;
 }
@@ -542,8 +543,9 @@ a[href^=tel] {
 }
 
 .terminals h2 {
-  line-height: 100px;
   text-align: center;
+  padding-top: 3px;
+  padding-bottom: 33px;
 }
 
 .terminals iframe {
@@ -553,7 +555,7 @@ a[href^=tel] {
 
 .terminals__location {
   position: absolute;
-  top: -800px;
+  top: -804px;
 }
 
 .terminals__location-button {
@@ -596,8 +598,12 @@ a[href^=tel] {
 }
 
 .offer h2 {
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 64px;
+  padding-bottom: 190px;
+}
+
+.offer ul {
+  margin-bottom: 67px;
 }
 
 .offer li {
@@ -607,7 +613,13 @@ a[href^=tel] {
 }
 
 .offer p {
+  font-family: 'museo_sans_cyrl700';
   font-size: 30px;
+  line-height: 36px;
+}
+
+.offer strong {
+  font-family: 'museo_sans_cyrl900';
 }
 
 /* Footer */
@@ -619,11 +631,87 @@ a[href^=tel] {
   color: #fff;
 }
 
+.footer h3 {
+  width: 260px;
+  font-family: 'museo_sans_cyrl300';
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 14px;
+}
+
 .footer a {
   color: #fff;
 }
 
+.footer__social {
+  overflow: hidden;
+  width: 366px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
 .footer__social li {
+  float: left;
+  margin-right: 40px;
+}
+
+.social-link {
+  position: relative;
   display: inline-block;
-  vertical-align: top;
+  font-size: 0;
+  background-image: url("../images/sprite.png");
+}
+
+.social-link:hover {
+  opacity: 0.5;
+}
+
+.social-linl--vk {
+  width: 34px;
+  height: 23px;
+  background-position: -6px -110px;
+}
+
+.social-linl--fb {
+  top: -3px;
+  left: 16px;
+  width: 15px;
+  height: 28px;
+  background-position: -185px -106px;
+}
+
+.social-linl--tw {
+  top: -3px;
+  left: 29px;
+  width: 42px;
+  height: 29px;
+  background-position: -47px -107px;
+}
+
+.social-linl--ig {
+  top: -3px;
+  left: 35px;
+  width: 29px;
+  height: 29px;
+  background-position: -95px -107px;
+}
+
+.social-linl--gp {
+  top: -1px;
+  left: 41px;
+  width: 40px;
+  height: 25px;
+  background-position: -133px -107px;
+}
+
+.footer__offer {
+  font-size: 15px;
+}
+
+.footer__offer a:hover {
+  opacity: 0.8;
 }
