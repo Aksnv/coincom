@@ -43,6 +43,7 @@
 }
 
 body {
+  overflow-x: hidden;
   max-width: 1890px;
   font-family: 'museo_sans_cyrl500', sans-serif;
   font-size: 15px;
@@ -418,14 +419,15 @@ a[href^=tel] {
 
 .how-it-works {
   position: relative;
-  min-height: 819px;
+  /* min-height: 819px; */
+  min-height: 788px;
   text-align: center;
 }
 
 .how-it-works::before {
   position: absolute;
   left: calc(50% - 366px);
-  bottom: 0;
+  bottom: -29px;
   content: "";
   display: block;
   width: 254px;
@@ -437,7 +439,7 @@ a[href^=tel] {
 
 .how-it-works::after {
   position: absolute;
-  top: 668px;
+  top: 666px;
   left: 0;
   content: "";
   display: block;
@@ -546,13 +548,17 @@ a[href^=tel] {
 
 .terminals h2 {
   text-align: center;
-  padding-top: 3px;
+  padding-top: 34px;
   padding-bottom: 33px;
 }
 
 .terminals iframe {
   position: absolute;
-  left: calc(50% - 945px);
+  /* position: absolute;
+  left: calc(50% - 945px); */
+  width: 100%;
+  max-width: 1890px;
+  height: 800px;
 }
 
 .terminals__location {

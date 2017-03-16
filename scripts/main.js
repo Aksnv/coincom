@@ -17,3 +17,40 @@
   });
 
 })();
+
+/* Плавный скролл страницы при нажатии на пункты меню */
+
+$(".header__menu-link--about").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#about").offset().top
+  }, 1000);
+  return false;
+});
+
+$(".header__menu-link--partnership").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#about__comment").offset().top
+  }, 1000);
+  return false;
+});
+
+$(".header__menu-link--how-it-works").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#how-it-works").offset().top
+  }, 1000);
+  return false;
+});
+
+$(".header__menu-link--terminals").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#terminals").offset().top
+  }, 1000);
+  return false;
+});
+
+$(".header__menu-link--offer").click(function() {
+  $("html, body").animate({
+    scrollTop: $("#footer").offset().top
+  }, 1000);
+  return false;
+});
