@@ -97,9 +97,7 @@
 
   <section id="terminals" class="terminals">
     <h2>Адреса мест установки терминалов</h2>
-    <div class="terminals__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8993.83339947656!2d37.503256449999995!3d55.698404249999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1489225261090" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+    <div id="terminals__map"></div>
     <div class="container">
       <div class="terminals__location">
         <button class="terminals__location-button terminals__location-button--open">Свернуть список</button>
@@ -180,7 +178,231 @@
       <p class="footer__offer"><a href="documents/Оферта - МК Развитие.pdf">Публичная оферта</a></p>
     </div>
   </footer>
+
+  <script type="text/javascript">
+      var map;
+      function initMap() {
+          map = new google.maps.Map(document.getElementById('terminals__map'), {
+              center: {lat: 55.755560, lng: 37.516810},
+              zoom: 10,
+              styles:
+                [
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.fill",
+                      "stylers": [
+                          {
+                              "saturation": 36
+                          },
+                          {
+                              "color": "#ffffff"
+                          },
+                          {
+                              "lightness": 40
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.text.stroke",
+                      "stylers": [
+                          {
+                              "visibility": "on"
+                          },
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 16
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "all",
+                      "elementType": "labels.icon",
+                      "stylers": [
+                          {
+                              "visibility": "off"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "administrative",
+                      "elementType": "geometry.fill",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 20
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "administrative",
+                      "elementType": "geometry.stroke",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 17
+                          },
+                          {
+                              "weight": 1.2
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "landscape",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#4b4b4b"
+                          },
+                          {
+                              "weight": "0.96"
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "poi",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 21
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.fill",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 17
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road.highway",
+                      "elementType": "geometry.stroke",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 29
+                          },
+                          {
+                              "weight": 0.2
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road.arterial",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 18
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "road.local",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 16
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "transit",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 19
+                          }
+                      ]
+                  },
+                  {
+                      "featureType": "water",
+                      "elementType": "geometry",
+                      "stylers": [
+                          {
+                              "color": "#000000"
+                          },
+                          {
+                              "lightness": 17
+                          }
+                      ]
+                  }
+              ]
+          });
+
+          var marker = new google.maps.Marker({
+              position: {lat: 55.64743, lng: 37.595718},
+              map: map,
+              title: 'ТЦ "АЗОВСКИЙ" - ул. Азовская, 24, корп. 3',
+              icon: 'images/marker.png'
+          });
+
+          var contentString = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Азовский&raquo;</h1>'+
+                              '<p><b>Адрес:</b> Азовская ул., 24, к. 3, Москва, 117452</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://azovski.ru/" target="_blank">azovski.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 310-77-10</p>'+
+                              '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+               content: contentString
+          });
+
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+          });
+
+          var marker2 = new google.maps.Marker({
+              position: {lat: 55.664040, lng: 37.627655},
+              map: map,
+              title: 'ТЦ "ГУДЗОН" - Каширское шоссе, 14',
+              icon: 'images/marker.png'
+          });
+
+          var contentString2 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Гудзон&raquo;</h1>'+
+                              '<p><b>Адрес:</b> Каширское ш., 14, Москва, 115230</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://goodzone.ru/" target="_blank">goodzone.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 225-80-59</p>'+
+                              '</div>';
+
+          var infowindow2 = new google.maps.InfoWindow({
+               content: contentString2
+          });
+
+          google.maps.event.addListener(marker2, 'click', function() {
+            infowindow2.open(map, marker2);
+          });
+      }
+  </script>
+
   <script src="scripts/jquery-3.1.1.min.js"></script>
   <script src="scripts/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
 </body>
 </html>

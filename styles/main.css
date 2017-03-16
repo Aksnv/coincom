@@ -419,7 +419,6 @@ a[href^=tel] {
 
 .how-it-works {
   position: relative;
-  /* min-height: 819px; */
   min-height: 788px;
   text-align: center;
 }
@@ -552,10 +551,8 @@ a[href^=tel] {
   padding-bottom: 33px;
 }
 
-.terminals iframe {
+#terminals__map {
   position: absolute;
-  /* position: absolute;
-  left: calc(50% - 945px); */
   width: 100%;
   max-width: 1890px;
   height: 800px;
@@ -630,6 +627,23 @@ p.mall-name {
 }
 
 p.mall-address {
+  line-height: 21px;
+}
+
+.marker-info {
+  width: 300px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #212121;
+}
+
+.marker-info h1 {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.marker-info p {
   line-height: 21px;
 }
 
