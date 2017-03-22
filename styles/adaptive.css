@@ -1,0 +1,179 @@
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1179px) {
+
+  .container {
+    width: 665px;
+  }
+
+  /* Header */
+
+  .header {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__menu-hamburger {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-color: #f9b400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu--open {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: block;
+    width: 750px;
+    min-height: 1080px;
+    font-family: 'museo_sans_cyrl700';
+    font-size: 20px;
+    padding-top: 366px;
+    background-color: #fff;
+  }
+
+  .header__menu li {
+    float: none;
+    text-align: center;
+    padding-bottom: 9px;
+  }
+
+  .header__menu-link {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  .header__contacts {
+    margin-right: 64px;
+  }
+
+  .header__contacts--open {
+    position: absolute;
+    top: 897px;
+    left: calc(50% - 146px);
+    margin-right: 0;
+    z-index: 2;
+  }
+
+  .header__contacts--open .header__contacts-email {
+    float: none;
+    position: absolute;
+    top: 77px;
+    left: 99px;
+  }
+
+  /* Promo */
+
+  .promo {
+    width: 750px;
+    margin: 0 auto;
+    background-image: url(../images/mall.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 63px) -130px;
+    background-color: #fff;
+    color: #fff;
+  }
+
+  .promo::before {
+    left: calc(50% - -45px);
+  }
+
+  .promo h1 {
+    top: 40px;
+    right: 157px;
+    width: 510px;
+  }
+
+  .promo h2 {
+    top: 302px;
+    right: 334px;
+    width: 330px;
+    font-family: 'museo_sans_cyrl300';
+  }
+
+  /* About */
+
+  .about {
+    background-position: center 315px;
+  }
+
+  .about p {
+    width: 665px;
+  }
+
+  .about__comment p {
+    position: absolute;
+    top: 70px;
+    left: 261px;
+    width: 245px;
+  }
+
+  .about__comment::before {
+    top: -15px;
+    left: 171px;
+  }
+
+  /* Partnership */
+
+  .partnership {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .partnership::before {
+    display: none;
+  }
+
+  /* How-it-works */
+
+  /* Terminals */
+
+  /* Offer */
+
+  /* Footer */
+
+}
+
+@media screen and (max-width: 664px) {
+
+  .container {
+    width: 300px;
+  }
+
+  /* Header */
+
+  /* Promo */
+
+  /* About */
+
+  /* Partnership */
+
+  /* How-it-works */
+
+  /* Terminals */
+
+  /* Offer */
+
+  /* Footer */
+
+}

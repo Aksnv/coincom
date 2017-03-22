@@ -54,3 +54,10 @@ $(".header__menu-link--offer").click(function() {
   }, 1000);
   return false;
 });
+
+/* Выпадающее основное меню для мобильной версии */
+
+$(".header__menu-hamburger").click(function() {
+  $(".header__menu").toggleClass("header__menu--open");
+  $(".header__contacts").toggleClass("header__contacts--open");
+});

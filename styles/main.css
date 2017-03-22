@@ -157,6 +157,10 @@ a[href^=tel] {
   background-position: 0 0;
 }
 
+.header__menu-hamburger {
+  display: none;
+}
+
 .header__menu {
   font-family: 'museo_sans_cyrl900';
   font-size: 14px;
