@@ -16,11 +16,12 @@
       <button class="header__menu-hamburger"></button>
       <nav class="header__menu">
         <ul>
-          <li><a class="header__menu-link header__menu-link--about header__menu-link--active" href="#about">О компании</a></li>
+          <li><a class="header__menu-link header__menu-link--about header__menu-link--active" href="#about">О сервисе</a></li>
           <li><a class="header__menu-link header__menu-link--partnership" href="#partnership">Сотрудничество</a></li>
           <li><a class="header__menu-link header__menu-link--how-it-works" href="#how-it-works">Как это работает</a></li>
-          <li><a class="header__menu-link header__menu-link--terminals" href="#terminals">Контакты</a></li>
-          <li><a class="header__menu-link header__menu-link--offer" href="#offer">Оферта</a></li>
+          <li><a class="header__menu-link header__menu-link--terminals" href="#terminals">Места установок</a></li>
+          <!-- <li><a class="header__menu-link header__menu-link--offer" href="#offer">Оферта</a></li> -->
+          <li><a class="header__menu-link header__menu-link--offer" href="documents/Оферта - МК Развитие.pdf">Оферта</a></li>
         </ul>
       </nav>
       <div class="header__contacts">
@@ -39,8 +40,8 @@
 
   <section id="about" class="about">
     <div class="container">
-      <h2>О компании</h2>
-      <p>Мы динамично развивающаяся компания, специализирующаяся на установке и обслуживании терминалов по приему монет. У многих из нас постоянно скапливается огромное количество мелочи: в банках, копилках, пепельницах, карманах пальто, коробках из под обуви и пр. Выбрасывать монеты жалко, платить на кассе в магазине неудобно и долго, обменять сложно - большинство банков неохотно идут на размен монеты. Наша&nbsp;услуга позволяет с легкостью и комфортом получить дополнительную выгоду от монет, которым вы давно не можете найти применение.</p>
+      <h2>О сервисе</h2>
+      <p>У многих из нас постоянно скапливается огромное количество мелочи: в банках, копилках, пепельницах, карманах пальто, коробках из под обуви и пр. Выбрасывать монеты жалко, платить на кассе в магазине неудобно и долго, обменять сложно - большинство банков неохотно идут на размен монеты. Наша&nbsp;услуга позволяет с легкостью и комфортом получить дополнительную выгоду от монет, которым вы давно не можете найти применение.</p>
       <div id="about__comment" class="about__comment">
         <p>Кстати, в литровую банку&nbsp;помещается ~ <strong>7000 рублей</strong> десятирублевыми<br> монетками.</p>
       </div>
@@ -83,22 +84,23 @@
     <div class="container">
       <h2>Как это работает</h2>
       <ul>
-        <li class="how-it-works__step how-it-works__step--1">Аппарат по приему монет размещается в&nbsp;торговых&nbsp;галереях</li>
+        <li class="how-it-works__step how-it-works__step--1">Аппарат по приему монет размещается в&nbsp;общественных&nbsp;местах</li>
         <li class="how-it-works__step how-it-works__step--2">Клиент, не сортируя, высыпает мелочь в&nbsp;аппарат</li>
         <li class="how-it-works__step how-it-works__step--3">Аппарат пересчитывает монеты и переводит сумму на телефон, банковскую карту и т.п.</li>
-        <li class="how-it-works__step how-it-works__step--4">Клиент становится пользователем сервиса и постоянным посетителем ТЦ!</li>
+        <li class="how-it-works__step how-it-works__step--4">Клиент становится постоянным пользователем сервиса</li>
       </ul>
-      <div class="how-it-works__comment">
+      <!-- <div class="how-it-works__comment">
         <p>По опыту работы, основной аудиторией сервиса являются молодые мамы с детьми.</p>
-      </div>
+      </div> -->
       <div class="how-it-works__advantage">
-        <p>Наш сервис привлечет дополнительных покупателей и оставит положительные воспоминания о посещении торгового центра.</p>
+        <p>Наш сервис привлечет дополнительных покупателей, которые будут регулярно им&nbsp;пользоваться</p>
       </div>
     </div>
   </section>
 
   <section id="terminals" class="terminals">
     <h2>Адреса мест установки терминалов</h2>
+    <div class="terminals__map-mask"></div>
     <div id="terminals__map"></div>
     <div class="container">
       <div class="terminals__location">
@@ -160,7 +162,7 @@
         <li class="offer-item offer-item--1">Дополнительную рекламную компанию за наш счет</li>
         <li class="offer-item offer-item--2">Привлечение дополнительных клиентов</li>
         <li class="offer-item offer-item--3">Повышение лояльности существующих клиентов</li>
-        <li class="offer-item offer-item--4">Возможность организации&nbsp;партнерской программы с ТЦ, карты лояльности, благотворительные акции и т.д.</li>
+        <li class="offer-item offer-item--4">Возможность организации&nbsp;партнерской программы, карты лояльности, благотворительные акции и т.д.</li>
       </ul>
       <p>Узнайте больше о всех преимуществах сервиса:</p>
       <p><strong>+7 (495) 998-04-93</strong></p>
@@ -187,6 +189,7 @@
           map = new google.maps.Map(document.getElementById('terminals__map'), {
               center: {lat: 55.755560, lng: 37.516810},
               zoom: 10,
+              disableDefaultUI: true,
               styles:
                 [
                   {

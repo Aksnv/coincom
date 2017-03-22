@@ -520,7 +520,7 @@ a[href^=tel] {
   background-image: url("../images/how-it-work_4.png");
 }
 
-.how-it-works__comment,
+/* .how-it-works__comment, */
 .how-it-works__advantage {
   position: absolute;
   font-size: 18px;
@@ -528,11 +528,11 @@ a[href^=tel] {
   text-align: left;
 }
 
-.how-it-works__comment {
+/* .how-it-works__comment {
   left: calc(50% - -7px);
   bottom: -138px;
   width: 380px;
-}
+} */
 
 .how-it-works__advantage {
   left: calc(50% - -9px);
@@ -546,13 +546,23 @@ a[href^=tel] {
 
 .terminals {
   position: relative;
-  min-height: 870px;
+  min-height: 901px;
 }
 
 .terminals h2 {
   text-align: center;
   padding-top: 34px;
   padding-bottom: 33px;
+}
+
+.terminals__map-mask {
+  position: absolute;
+  width: 100%;
+  max-width: 1890px;
+  height: 800px;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
 }
 
 #terminals__map {
@@ -565,6 +575,7 @@ a[href^=tel] {
 .terminals__location {
   position: absolute;
   top: 0;
+  z-index: 2;
 }
 
 .terminals__location-button {

@@ -18,6 +18,12 @@
 
 })();
 
+/* Активация карты с местами установки терминалов при клике по ней */
+
+$(".terminals__map-mask").click(function() {
+  $(this).hide();
+});
+
 /* Плавный скролл страницы при нажатии на пункты меню */
 
 $(".header__menu-link--about").click(function() {
@@ -48,12 +54,12 @@ $(".header__menu-link--terminals").click(function() {
   return false;
 });
 
-$(".header__menu-link--offer").click(function() {
+/*$(".header__menu-link--offer").click(function() {
   $("html, body").animate({
     scrollTop: $("#footer").offset().top
   }, 1000);
   return false;
-});
+});*/
 
 /* Выпадающее основное меню для мобильной версии */
 
