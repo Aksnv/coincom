@@ -38,10 +38,19 @@ $(".header__menu-link--about").click(function() {
 $(".header__menu-link--partnership").click(function() {
   $(".header__menu").toggleClass("header__menu--open");
   $(".header__contacts").toggleClass("header__contacts--open");
-  $("html, body").animate({
-    scrollTop: $("#about__comment").offset().top
-  }, 1000);
-  return false;
+
+  if ($(".container").css("width") <= "665px") {
+    $("html, body").animate({
+      scrollTop: $("#partnership").offset().top
+    }, 1000);
+    return false;
+  } else {
+    $("html, body").animate({
+      scrollTop: $("#about__comment").offset().top
+    }, 1000);
+    return false;
+  }
+  
 });
 
 $(".header__menu-link--how-it-works").click(function() {

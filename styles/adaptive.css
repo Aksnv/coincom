@@ -123,6 +123,7 @@
   /* About */
 
   .about {
+    min-height: 657px;
     background-position: center 239px;
   }
 
@@ -164,7 +165,9 @@
   /* Partnership */
 
   .partnership {
+    top: 1207px;
     width: 750px;
+    min-height: 532px;
     margin: 0 auto;
   }
 
@@ -174,7 +177,51 @@
 
   /* How-it-works */
 
+  .how-it-works {
+    top: -532px;
+    min-height: 1176px;
+  }
+
+  .how-it-works::before {
+    left: calc(50% - 332px);
+    bottom: -31px;
+  }
+
+  .how-it-works::after {
+    display: none;
+  }
+
+  .how-it-works h2 {
+    padding-top: 58px;
+  }
+
+  .how-it-works__step--1 {
+    margin-top: 2px;
+    margin-left: 86px;
+    margin-right: 144px;
+    margin-bottom: 296px;
+  }
+
+  .how-it-works__step--2 {
+    margin-top: 2px;
+    margin-right: 0;
+  }
+
+  .how-it-works__step--3 {
+    margin-left: 89px;
+    margin-right: 105px;
+  }
+
+  .how-it-works__advantage {
+    left: calc(50% - -10px);
+    bottom: -269px;
+    width: 355px;
+  }
+
   /* Terminals */
+
+  .terminals {
+  }
 
   /* Offer */
 
