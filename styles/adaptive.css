@@ -258,7 +258,18 @@
 
   /* Terminals */
 
-  .terminals {
+  #terminals__map {
+    left: calc(50% - 375px);
+    width: 750px;
+  }
+
+  .terminals__location {
+    left: -42px;
+  }
+
+  .terminals__location-button,
+  .terminals__location-list {
+    width: 750px;
   }
 
   /* Offer */
