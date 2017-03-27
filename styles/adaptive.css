@@ -52,9 +52,17 @@
     /* min-height: 800px; */
     font-family: 'museo_sans_cyrl700';
     font-size: 20px;
-    padding-top: 366px; 
+    padding-top: 366px;
     /* padding-top: 266px; */
     background-color: #fff;
+  }
+
+  .header__menu--open + .header__menu-hamburger {
+    top: 58px;
+    right: 0;
+    width: 16px;
+    height: 16px; 
+    background-position: -160px -168px;
   }
 
   .header__menu li {
@@ -175,6 +183,35 @@
     display: none;
   }
 
+  .partnership__inner {
+    float: none;
+  }
+
+  .partnership__inner h2,
+  .partnership__inner p {
+    text-align: center;
+  }
+
+  .partnership-form {
+    width: 665px;
+  }
+
+  .partnership-form input {
+    width: 320px;
+  }
+
+  .partnership-form__field {
+    margin-right: 25px;
+  }
+
+  #partnership-form__comment {
+    width: 665px;
+  }
+
+  .partnership-form input[type="submit"] {
+    margin-left: 172px;
+  }
+
   /* How-it-works */
 
   .how-it-works {
@@ -184,7 +221,8 @@
 
   .how-it-works::before {
     left: calc(50% - 332px);
-    bottom: -31px;
+    bottom: -32px;
+    z-index: -1;
   }
 
   .how-it-works::after {
