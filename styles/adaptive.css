@@ -274,6 +274,54 @@
 
   /* Offer */
 
+  .offer h2 {
+    padding-top: 44px;
+    padding-bottom: 170px;
+  }
+
+  .offer-item--1 {
+    margin-left: 76px;
+    margin-bottom: 166px;
+  }
+
+  .offer-item--1::before {
+    top: -103px;
+  }
+
+  .offer-item--2 {
+    margin-right: 0;
+  }
+
+  .offer-item--2::before {
+    top: -110px;
+  }
+
+  .offer-item--3 {
+    margin-left: 71px;
+  }
+
+  .offer-item--3::before {
+    top: -118px;
+  }
+
+  .offer-item--4::before {
+    top: -119px;
+  }
+
+  .offer ul {
+    margin-bottom: 69px;
+  }
+
+  .offer p {
+    width: 365px;
+    margin: 0 auto;
+  }
+
+  .offer p:last-child {
+    padding-bottom: 63px;
+  }
+
+
   /* Footer */
 
 }
