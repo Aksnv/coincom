@@ -25,11 +25,17 @@
     display: block;
     width: 20px;
     height: 14px;
-    background-color: #f9b400;
+    background-image: url(../images/sprite.png);
+    background-position: -160px -144px;
+    background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     z-index: 2;
+  }
+
+  .header__menu-hamburger:hover {
+    opacity: 0.5;
   }
 
   .header__menu {
@@ -39,13 +45,15 @@
   .header__menu--open {
     position: absolute;
     top: 0;
-    left: -40px;
+    left: -42px;
     display: block;
     width: 750px;
-    min-height: 1080px;
+    min-height: 1080px; 
+    /* min-height: 800px; */
     font-family: 'museo_sans_cyrl700';
     font-size: 20px;
-    padding-top: 366px;
+    padding-top: 366px; 
+    /* padding-top: 266px; */
     background-color: #fff;
   }
 
@@ -69,7 +77,8 @@
 
   .header__contacts--open {
     position: absolute;
-    top: 897px;
+    top: 897px; 
+    /* top: 617px; */
     left: calc(50% - 146px);
     margin-right: 0;
     z-index: 2;
@@ -87,9 +96,9 @@
   .promo {
     width: 750px;
     margin: 0 auto;
-    background-image: url(../images/mall.png);
+    background-image: url(../images/mall_750.png);
     background-repeat: no-repeat;
-    background-position: calc(50% - 63px) -130px;
+    background-position: calc(50% - 0px) -130px;
     background-color: #fff;
     color: #fff;
   }
@@ -99,7 +108,7 @@
   }
 
   .promo h1 {
-    top: 40px;
+    top: 41px;
     right: 157px;
     width: 510px;
   }
@@ -114,18 +123,37 @@
   /* About */
 
   .about {
-    background-position: center 315px;
+    background-position: center 239px;
+  }
+
+  .about h2 {
+    padding-bottom: 25px;
   }
 
   .about p {
     width: 665px;
   }
 
+  .about__service {
+    top: 548px;
+    left: 0;
+    width: 355px;
+  }
+
+  .about__service p {
+    width: 355px;
+  }
+
+  .about__comment {
+    top: 499px;
+    right: 210px;
+  }
+
   .about__comment p {
     position: absolute;
     top: 70px;
     left: 261px;
-    width: 245px;
+    width: 250px;
   }
 
   .about__comment::before {
@@ -175,5 +203,11 @@
   /* Offer */
 
   /* Footer */
+
+  /* To top button */
+
+  .upstairs-block {
+    display: none;
+  }
 
 }

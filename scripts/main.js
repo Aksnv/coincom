@@ -27,6 +27,8 @@ $(".terminals__map-mask").click(function() {
 /* Плавный скролл страницы при нажатии на пункты меню */
 
 $(".header__menu-link--about").click(function() {
+  $(".header__menu").toggleClass("header__menu--open");
+  $(".header__contacts").toggleClass("header__contacts--open");
   $("html, body").animate({
     scrollTop: $("#about").offset().top
   }, 1000);
@@ -34,6 +36,8 @@ $(".header__menu-link--about").click(function() {
 });
 
 $(".header__menu-link--partnership").click(function() {
+  $(".header__menu").toggleClass("header__menu--open");
+  $(".header__contacts").toggleClass("header__contacts--open");
   $("html, body").animate({
     scrollTop: $("#about__comment").offset().top
   }, 1000);
@@ -41,6 +45,8 @@ $(".header__menu-link--partnership").click(function() {
 });
 
 $(".header__menu-link--how-it-works").click(function() {
+  $(".header__menu").toggleClass("header__menu--open");
+  $(".header__contacts").toggleClass("header__contacts--open");
   $("html, body").animate({
     scrollTop: $("#how-it-works").offset().top
   }, 1000);
@@ -48,6 +54,8 @@ $(".header__menu-link--how-it-works").click(function() {
 });
 
 $(".header__menu-link--terminals").click(function() {
+  $(".header__menu").toggleClass("header__menu--open");
+  $(".header__contacts").toggleClass("header__contacts--open");
   $("html, body").animate({
     scrollTop: $("#terminals").offset().top
   }, 1000);
@@ -60,6 +68,15 @@ $(".header__menu-link--terminals").click(function() {
   }, 1000);
   return false;
 });*/
+
+/* Плавный скролл страницы при нажатии кнопки "Наверх" */
+
+$(".upstairs-block__button").click(function() {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
 
 /* Выпадающее основное меню для мобильной версии */
 

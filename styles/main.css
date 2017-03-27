@@ -329,6 +329,10 @@ a[href^=tel] {
   line-height: 19px;
 }
 
+/* .about__comment span {
+  display: block;
+} */
+
 /* Partnership */
 
 .partnership {
@@ -857,4 +861,57 @@ p.mall-address {
 
 .footer__offer a:hover {
   opacity: 0.8;
+}
+
+/* To top button */
+
+.upstairs-block {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  width: 210px;
+  z-index: 3;
+}
+
+.upstairs-block__button {
+  position: absolute;
+  top: -30px; 
+  left: 130px;
+  width: 55px;
+  height: 55px;
+  margin-top: -5px;
+  background-color: #e3e4e8;
+  border-radius: 50%;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.upstairs-block__button:hover {
+  background-color: #ffa800;
+  background-color: #fab500;
+}
+
+.upstairs-block__button::before,
+.upstairs-block__button::after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.upstairs-block__button:hover::before,
+.upstairs-block__button:hover::after {
+  background-color: #ffffff;
+}
+
+.upstairs-block__button::before {
+  top: 28px;
+  left: 25px;
+  transform: rotate(45deg);
+}
+
+.upstairs-block__button::after {
+  top: 28px;
+  left: 16px;
+  transform: rotate(-45deg);
 }
