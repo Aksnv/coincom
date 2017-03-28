@@ -555,11 +555,16 @@
 
   /* Terminals */
 
+  .terminals {
+    min-height: 648px;
+  }
+
   .terminals h2 {
     width: 280px;
     font-size: 25px;
     margin: 0 auto;
     padding-top: 16px;
+    padding-bottom: 7px;
   }
 
   #terminals__map,
@@ -568,9 +573,28 @@
     width: 360px;
   }
 
-  #terminals__map {
-    left: calc(50% - 192px);
+  .terminals__location {
+    left: -30px;
   }
+
+  .terminals__location-button {
+    padding-left: 29px;
+  }
+
+  .terminals__location-button::after {
+    right: 30px;
+  }
+
+  .terminals__map-mask {
+    height: 569px;
+  }
+
+  #terminals__map {
+    left: calc(50% - 180px);
+    height: 569px;
+  }
+
+
 
 
 
