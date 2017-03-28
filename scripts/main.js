@@ -2,6 +2,18 @@
 
 (function() {
 
+  if (($(".container").css("width") == "665px") || ($(".container").css("width") == "300px")) {
+    $(".terminals__location-button").removeClass("terminals__location-button--open");
+    $(".terminals__location-button").addClass("terminals__location-button--close");
+    $(".terminals__location-button").html("Развернуть список");
+    $(".terminals__location-list").hide();
+  } else {
+    $(".terminals__location-button").addClass("terminals__location-button--open");
+    $(".terminals__location-button").removeClass("terminals__location-button--close");
+    $(".terminals__location-button").html("Свернуть список");
+    $(".terminals__location-list").show();
+  }
+
   $(".terminals__location-button").click(function() {
     if ($(this).hasClass("terminals__location-button--open")) {
       $(this).addClass("terminals__location-button--close");
@@ -50,7 +62,7 @@ $(".header__menu-link--partnership").click(function() {
     }, 1000);
     return false;
   }
-  
+
 });
 
 $(".header__menu-link--how-it-works").click(function() {

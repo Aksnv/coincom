@@ -272,6 +272,18 @@
     width: 750px;
   }
 
+  .terminals__location-button {
+    padding-left: 38px;
+  }
+
+  .terminals__location-button::after {
+    right: 45px;
+  }
+
+  .terminals__location-list li {
+    padding-left: 39px;
+  }
+
   /* Offer */
 
   .offer h2 {
