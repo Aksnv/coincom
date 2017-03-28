@@ -216,7 +216,8 @@
 
   .how-it-works {
     top: -532px;
-    min-height: 1176px;
+    /* min-height: 1176px; */
+    height: 1176px;
   }
 
   .how-it-works::before {

@@ -435,14 +435,15 @@ a[href^=tel] {
 
 .how-it-works {
   position: relative;
-  min-height: 788px;
+  /* min-height: 817px; */
+  height: 817px;
   text-align: center;
 }
 
 .how-it-works::before {
   position: absolute;
   left: calc(50% - 366px);
-  bottom: -29px;
+  bottom: 0;
   content: "";
   display: block;
   width: 254px;
@@ -558,11 +559,12 @@ a[href^=tel] {
 
 .terminals {
   position: relative;
-  min-height: 901px;
+  min-height: 872px;
 }
 
 .terminals h2 {
   text-align: center;
+  /* padding-top: 5px; */
   padding-top: 34px;
   padding-bottom: 33px;
 }
@@ -779,7 +781,7 @@ p.mall-address {
 }
 
 .footer h3 {
-  width: 260px;
+  width: 270px;
   font-family: 'museo_sans_cyrl300';
   font-size: 16px;
   line-height: 28px;
