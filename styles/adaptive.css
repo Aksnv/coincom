@@ -333,12 +333,11 @@
     padding-bottom: 63px;
   }
 
-
   /* Footer */
 
 }
 
-@media screen and (max-width: 664px) {
+@media screen and (max-width: 749px) {
 
   .container {
     width: 300px;
@@ -346,7 +345,68 @@
 
   /* Header */
 
+  .header {
+    position: absolute;
+    left: calc(50% - 180px);
+    width: 360px;
+    box-shadow: none;
+  }
+
+  .header::before,
+  .header::after {
+    display: none;
+  }
+
+  .header__logo {
+    margin-top: 18px;
+  }
+
+  .header__logo-link {
+    background-position: 0 -144px;
+  }
+
+  .header__menu-hamburger {
+    top: 30px;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
   /* Promo */
+
+  .promo {
+    width: 360px;
+    min-height: 568px;
+    margin: 0 auto;
+    box-shadow: none;
+    border-bottom: none;
+  }
+
+  .promo::before {
+    top: 76px;
+    left: calc(50% - 74px);
+    transform: scale(0.78);
+  }
+
+  .promo::after {
+    display: none;
+  }
+
+  .promo h1 {
+    top: 377px;
+    right: 141px;
+    width: 159px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .promo h2 {
+    top: 505px;
+    right: 1px;
+    width: 300px;
+    font-size: 16px;
+  }
 
   /* About */
 
