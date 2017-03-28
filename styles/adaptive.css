@@ -410,6 +410,46 @@
 
   /* About */
 
+  .about {
+    min-height: 764px;
+    background-size: 316px 107px;
+    background-position: center 267px;
+  }
+
+  .about h2 {
+    padding-top: 23px;
+  }
+
+  .about p {
+    width: 292px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .about__service {
+    top: 403px;
+    left: -28px;
+    text-align: center;
+  }
+
+  .about__comment {
+    width: 248px;
+    text-align: center;
+  }
+
+  .about__comment::before {
+    top: 14px;
+    left: 271px;
+  }
+
+  .about__comment p {
+    top: 193px;
+    left: 180px;
+    width: 254px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   /* Partnership */
 
   /* How-it-works */
