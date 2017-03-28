@@ -369,13 +369,39 @@
     top: 30px;
   }
 
+  .header__menu--open {
+    left: -30px;
+    width: 360px;
+    min-height: 568px;
+    font-size: 15px;
+    line-height: 40px;
+    padding-top: 187px;
+  }
+
+  .header__menu li {
+    padding-bottom: 0;
+  }
+
+  .header__menu-link {
+    margin-bottom: 15px;
+  }
+
+  .header__menu--open + .header__menu-hamburger {
+    top: 30px;
+  }
+
   .header__contacts {
     display: none;
+  }
+
+  .header__contacts--open {
+    top: 441px;
   }
 
   /* Promo */
 
   .promo {
+    overflow: hidden;
     width: 360px;
     min-height: 568px;
     margin: 0 auto;
@@ -583,6 +609,14 @@
 
   .terminals__location-button::after {
     right: 30px;
+  }
+
+  .terminals__location-list {
+    height: 500px;
+  }
+
+  .terminals__location-list li {
+    padding-left: 29px;
   }
 
   .terminals__map-mask {

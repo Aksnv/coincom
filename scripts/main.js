@@ -104,4 +104,14 @@ $(".upstairs-block__button").click(function() {
 $(".header__menu-hamburger").click(function() {
   $(".header__menu").toggleClass("header__menu--open");
   $(".header__contacts").toggleClass("header__contacts--open");
+
+  if ($(".container").css("width") == "300px") {
+    if ($(".header__menu").hasClass("header__menu--open")) {
+      $(".header__logo-link").css("backgroundPosition", "0 0");
+      $(".header__contacts").css("display", "block");
+    } else {
+      $(".header__logo-link").css("backgroundPosition", "0 -144px");
+      $(".header__contacts").css("display", "none");
+    }
+  }
 });
