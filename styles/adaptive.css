@@ -594,11 +594,68 @@
     height: 569px;
   }
 
-
-
-
-
   /* Offer */
+
+  .offer {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .offer h2 {
+    padding-top: 64px;
+    padding-bottom: 160px;
+  }
+
+  .offer ul {
+    margin-bottom: 40px;
+  }
+
+  .offer-item--1 {
+    margin-left: 63px;
+    margin-right: 0;
+    margin-bottom: 153px;
+  }
+
+  .offer-item--1::before {
+    top: -93px;
+  }
+
+  .offer-item--2 {
+    margin-left: 57px;
+    margin-bottom: 151px;
+  }
+
+  .offer-item--2::before {
+    top: -101px;
+  }
+
+  .offer-item--3 {
+    margin-left: 61px;
+    margin-right: 0;
+    margin-bottom: 153px;
+  }
+
+  .offer-item--3::before {
+    top: -98px;
+  }
+
+  .offer-item--4 {
+    margin-left: 18px;
+  }
+
+  .offer-item--4::before {
+    top: -100px;
+  }
+
+  .offer p {
+    width: 296px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .offer p:last-child {
+    padding-bottom: 38px;
+  }
 
   /* Footer */
 
