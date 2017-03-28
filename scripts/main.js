@@ -5,7 +5,7 @@
   if (($(".container").css("width") == "665px") || ($(".container").css("width") == "300px")) {
     $(".terminals__location-button").removeClass("terminals__location-button--open");
     $(".terminals__location-button").addClass("terminals__location-button--close");
-    $(".terminals__location-button").html("Развернуть список");
+    $(".terminals__location-button").html("Показать список");
     $(".terminals__location-list").hide();
   } else {
     $(".terminals__location-button").addClass("terminals__location-button--open");
@@ -18,7 +18,7 @@
     if ($(this).hasClass("terminals__location-button--open")) {
       $(this).addClass("terminals__location-button--close");
       $(this).removeClass("terminals__location-button--open");
-      $(this).html("Развернуть список");
+      $(this).html("Показать список");
       $(".terminals__location-list").slideUp();
     } else {
       $(this).addClass("terminals__location-button--open");

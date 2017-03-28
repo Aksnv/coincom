@@ -453,13 +453,42 @@
   /* Partnership */
 
   .partnership {
-    top: 1911px;
+    top: 1910px;
+    width: 360px;
+  }
+
+  .partnership__inner h2 {
+    padding-top: 34px;
+  }
+
+  .partnership__inner p {
+    line-height: 20px;
+    padding-bottom: 20px;
+  }
+
+  .partnership-form__field {
+    float: none;
+  }
+
+  .partnership-form input {
+    width: 300px;
+  }
+
+  #partnership-form__comment {
+    width: 300px;
+  }
+
+  .partnership-form input[type="submit"] {
+    width: 300px;
+    margin-left: 0;
+    margin-bottom: 44px;
   }
 
   /* How-it-works */
 
   .how-it-works {
-    min-height: 1911px;
+    top: -633px;
+    min-height: 1910px;
   }
 
   .how-it-works::before {
@@ -525,6 +554,25 @@
   }
 
   /* Terminals */
+
+  .terminals h2 {
+    width: 280px;
+    font-size: 25px;
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+
+  #terminals__map,
+  .terminals__location-button, 
+  .terminals__location-list {
+    width: 360px;
+  }
+
+  #terminals__map {
+    left: calc(50% - 192px);
+  }
+
+
 
   /* Offer */
 
