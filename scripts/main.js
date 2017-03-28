@@ -115,3 +115,27 @@ $(".header__menu-hamburger").click(function() {
     }
   }
 });
+
+/* Отображение элементов при изменении размеров экрана */
+
+$(window).resize(function() {
+  if (($(".container").css("width") == "1180px") || ($(".container").css("width") == "665px")) {
+    $(".header__logo-link").css("backgroundPosition", "0 0");
+    $(".header__contacts").css("display", "block");
+  } else {
+    $(".header__logo-link").css("backgroundPosition", "0 -144px");
+    $(".header__contacts").css("display", "none");
+  }
+
+  if ($(".container").css("width") == "1180px") {
+    $(".terminals__location-button").addClass("terminals__location-button--open");
+    $(".terminals__location-button").removeClass("terminals__location-button--close");
+    $(".terminals__location-button").html("Свернуть список");
+    $(".terminals__location-list").show();
+  } else {
+    $(".terminals__location-button").removeClass("terminals__location-button--open");
+    $(".terminals__location-button").addClass("terminals__location-button--close");
+    $(".terminals__location-button").html("Показать список");
+    $(".terminals__location-list").hide();
+  }
+});
