@@ -9,8 +9,13 @@
   /* Header */
 
   .header {
-    width: 750px;
-    margin: 0 auto;
+    width: 100%;
+    /* width: 750px;
+    margin: 0 auto; */
+  }
+
+  .header::before {
+    display: none;
   }
 
   .header__logo {
@@ -102,17 +107,28 @@
   /* Promo */
 
   .promo {
-    width: 750px;
-    margin: 0 auto;
-    background-image: url(../images/mall_750.png);
+    width: 100%;
+    /* width: 750px;
+    margin: 0 auto; */
+    /* background-image: url(../images/mall_750.png);
     background-repeat: no-repeat;
     background-position: calc(50% - 0px) -130px;
-    background-color: #fff;
+    background-color: #fff; */
     color: #fff;
+
+
+    background-image: url(../images/mall_dark.png), url(../images/bg.png);
+    background-repeat: no-repeat, repeat;
+    background-position: calc(50% - 64px) -130px, center;
+    background-color: #fab500;
   }
 
   .promo::before {
     left: calc(50% - -45px);
+  }
+
+  .promo::after {
+    display: none;
   }
 
   .promo h1 {
@@ -272,7 +288,7 @@
     top: 101px;
     width: 100%;
     /* background-color: #fff; */
-    background-color: #e3e4e8;
+    /* background-color: #e3e4e8; */
     border-bottom: 1px solid #fff;
   }
 
@@ -440,6 +456,13 @@
     width: 100%;
     min-height: 568px;
     margin: 0 auto;
+    
+
+    background-image: url(../images/mall_sm.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 0px) -130px;
+    background-color: #fff;
+
     box-shadow: none;
     border-bottom: none;
   }
