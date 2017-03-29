@@ -10,8 +10,6 @@
 
   .header {
     width: 100%;
-    /* width: 750px;
-    margin: 0 auto; */
   }
 
   .header::before {
@@ -53,11 +51,9 @@
     left: -43px;
     display: block;
     width: 751px;
-    /* min-height: 1080px;  */
     min-height: 800px; 
     font-family: 'museo_sans_cyrl700';
     font-size: 20px;
-    /* padding-top: 366px; */
     padding-top: 295px; 
     background-color: #fff;
   }
@@ -90,7 +86,6 @@
 
   .header__contacts--open {
     position: absolute;
-    /* top: 897px;  */
     top: 655px; 
     left: calc(50% - 146px);
     margin-right: 0;
@@ -108,15 +103,7 @@
 
   .promo {
     width: 100%;
-    /* width: 750px;
-    margin: 0 auto; */
-    /* background-image: url(../images/mall_750.png);
-    background-repeat: no-repeat;
-    background-position: calc(50% - 0px) -130px;
-    background-color: #fff; */
     color: #fff;
-
-
     background-image: url(../images/mall_dark.png), url(../images/bg.png);
     background-repeat: no-repeat, repeat;
     background-position: calc(50% - 64px) -130px, center;
@@ -190,7 +177,6 @@
 
   .partnership {
     top: 1207px;
-    /* width: 750px; */
     width: 100%;
     min-height: 532px;
     margin: 0 auto;
@@ -233,7 +219,6 @@
 
   .how-it-works {
     top: -532px;
-    /* min-height: 1176px; */
     height: 1207px;
   }
 
@@ -277,8 +262,6 @@
   /* Terminals */
 
   #terminals__map {
-    /* left: calc(50% - 375px);
-    width: 750px; */
     left: 0;
     width: 100%;
   }
@@ -287,9 +270,6 @@
     left: 0;
     top: 101px;
     width: 100%;
-    /* background-color: #fff; */
-    /* background-color: #e3e4e8; */
-    border-bottom: 1px solid #fff;
   }
 
   .terminals__location > .container {
@@ -305,6 +285,17 @@
     width: 100%;
     height: 70px;
     background-color: #fab500;
+  }
+
+  .terminals__location::after {
+    position: absolute;
+    top: 69px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
   }
 
   .terminals__location-button,
@@ -387,8 +378,6 @@
 
   .header {
     position: absolute;
-    /* left: calc(50% - 180px);
-    width: 360px; */
     width: 100%;
     box-shadow: none;
   }
@@ -413,12 +402,10 @@
   .header__menu--open {
     left: -30px;
     width: 360px;
-    min-height: 568px; 
-    /* min-height: 495px; */
+    min-height: 568px;
     font-size: 15px;
     line-height: 40px;
-    /* padding-top: 187px; */
-    padding-top: 160px;
+    padding-top: 187px;
   }
 
   .header__menu li {
@@ -443,8 +430,7 @@
   }
 
   .header__contacts--open {
-    /* top: 441px; */
-    top: 355px;
+    top: 441px;
     width: 300px;
   }
 
@@ -452,7 +438,6 @@
 
   .promo {
     overflow: hidden;
-    /* width: 360px; */
     width: 100%;
     min-height: 568px;
     margin: 0 auto;
@@ -539,17 +524,14 @@
 
   .partnership {
     top: 1910px;
-    /* width: 360px; */
     width: 100%;
   }
 
   .partnership::after {
     position: absolute;
     top: -245px;
-    /* left: -35px; */
     content: "";
     display: block;
-    /* width: 360px; */
     width: 100%;
     height: 245px;
     background-color: #f6e5b6;
@@ -647,18 +629,6 @@
     text-align: center;
   }
 
-  /* .how-it-works__advantage::before {
-    position: absolute;
-    top: -118px;
-    left: -35px;
-    content: "";
-    display: block;
-    width: 360px;
-    height: 245px;
-    background-color: #f6e5b6;
-    z-index: -1;
-  } */
-
   /* Terminals */
 
   .terminals {
@@ -676,13 +646,11 @@
   #terminals__map,
   .terminals__location-button, 
   .terminals__location-list {
-    /* width: 360px; */
     width: 100%;
   }
 
   .terminals__location {
     top: 79px;
-    /* left: -30px; */
     left: 0;
   }
 
@@ -711,15 +679,12 @@
   }
 
   #terminals__map {
-    /* left: calc(50% - 180px); */
     height: 569px;
   }
 
   /* Offer */
 
   .offer {
-    /* width: 360px;
-    margin: 0 auto; */
     width: 100%;
   }
 
@@ -782,8 +747,6 @@
   /* Footer */
 
   .footer {
-    /* width: 360px;
-    margin: 0 auto; */
     width: 100%;
   } 
 
@@ -812,21 +775,5 @@
     left: -10px;
     width: 320px;
   }
-
-  /* Terminals */
-
-  /* #terminals__map,
-  .terminals__location-button, 
-  .terminals__location-list {
-    width: 320px;
-  }
-  
-  .terminals__location {
-    left: -10px;
-  }
-  
-  #terminals__map {
-    left: calc(50% - 160px);
-  } */
 
 }

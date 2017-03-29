@@ -210,9 +210,7 @@ strong > a {
 .header__contacts-phone {
   font-family: 'museo_sans_cyrl900';
   font-size: 30px;
-  /* text-decoration: none; */
   margin-top: 42px;
-  /* color: #000; */
 }
 
 .header__contacts-email {
@@ -342,10 +340,6 @@ strong > a {
   line-height: 19px;
 }
 
-/* .about__comment span {
-  display: block;
-} */
-
 /* Partnership */
 
 .partnership {
@@ -405,7 +399,6 @@ strong > a {
   height: 42px;
   font-family: 'museo_sans_cyrl700';
   font-size: 14px;
-  /* line-height: 60px; */
   padding: 0 10px;
   color: #333;
   background-color: #fff;
@@ -549,19 +542,12 @@ strong > a {
   background-image: url("../images/how-it-work_4.png");
 }
 
-/* .how-it-works__comment, */
 .how-it-works__advantage {
   position: absolute;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
 }
-
-/* .how-it-works__comment {
-  left: calc(50% - -7px);
-  bottom: -138px;
-  width: 380px;
-} */
 
 .how-it-works__advantage {
   left: calc(50% - -9px);
@@ -580,7 +566,6 @@ strong > a {
 
 .terminals h2 {
   text-align: center;
-  /* padding-top: 5px; */
   padding-top: 34px;
   padding-bottom: 33px;
 }
@@ -627,7 +612,6 @@ strong > a {
   outline: none;
   padding-left: 28px;
   border: none;
-  /* border-bottom: 1px solid #fff; */
   background-color: #fab500;
   color: #fff;
   cursor: pointer;

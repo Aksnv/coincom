@@ -133,10 +133,20 @@ $(".header__menu-link").click(function() {
   $(this).addClass("header__menu-link--active");
 });
 
+$(document).scroll(function() {
+  if (($(".container").css("width") == "300px") && ($(".header__menu").hasClass("header__menu--open"))) {
+    $(".header__logo-link").css("backgroundPosition", "0 0");
+    $(".header__contacts").css("display", "block");
+  }
+});
+
 /* Отображение элементов при изменении размеров экрана */
 
 $(window).resize(function() {
   if (($(".container").css("width") == "1180px") || ($(".container").css("width") == "665px")) {
+    $(".header__logo-link").css("backgroundPosition", "0 0");
+    $(".header__contacts").css("display", "block");
+  } else if ($(".header__menu").hasClass("header__menu--open")) {
     $(".header__logo-link").css("backgroundPosition", "0 0");
     $(".header__contacts").css("display", "block");
   } else {
