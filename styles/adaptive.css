@@ -174,7 +174,8 @@
 
   .partnership {
     top: 1207px;
-    width: 750px;
+    /* width: 750px; */
+    width: 100%;
     min-height: 532px;
     margin: 0 auto;
   }
@@ -217,12 +218,12 @@
   .how-it-works {
     top: -532px;
     /* min-height: 1176px; */
-    height: 1176px;
+    height: 1207px;
   }
 
   .how-it-works::before {
     left: calc(50% - 332px);
-    bottom: -32px;
+    bottom: -1px;
     z-index: -1;
   }
 
@@ -403,7 +404,8 @@
 
   .promo {
     overflow: hidden;
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
     min-height: 568px;
     margin: 0 auto;
     box-shadow: none;
@@ -481,7 +483,21 @@
 
   .partnership {
     top: 1910px;
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
+  }
+
+  .partnership::after {
+    position: absolute;
+    top: -245px;
+    /* left: -35px; */
+    content: "";
+    display: block;
+    /* width: 360px; */
+    width: 100%;
+    height: 245px;
+    background-color: #f6e5b6;
+    z-index: -1;
   }
 
   .partnership__inner h2 {
@@ -515,7 +531,7 @@
 
   .how-it-works {
     top: -633px;
-    min-height: 1910px;
+    min-height: 1911px;
   }
 
   .how-it-works::before {
@@ -568,7 +584,7 @@
     text-align: center;
   }
 
-  .how-it-works__advantage::before {
+  /* .how-it-works__advantage::before {
     position: absolute;
     top: -118px;
     left: -35px;
@@ -578,7 +594,7 @@
     height: 245px;
     background-color: #f6e5b6;
     z-index: -1;
-  }
+  } */
 
   /* Terminals */
 
@@ -632,8 +648,9 @@
   /* Offer */
 
   .offer {
-    width: 360px;
-    margin: 0 auto;
+    /* width: 360px;
+    margin: 0 auto; */
+    width: 100%;
   }
 
   .offer h2 {
@@ -695,9 +712,10 @@
   /* Footer */
 
   .footer {
-    width: 360px;
-    margin: 0 auto;
-  }
+    /* width: 360px;
+    margin: 0 auto; */
+    width: 100%;
+  } 
 
   .footer__social {
     width: 300px;
