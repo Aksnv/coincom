@@ -81,6 +81,12 @@ a[href^=tel] {
   color: #000;
 }
 
+strong > a {
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
     padding-right: 9px;
@@ -199,7 +205,9 @@ a[href^=tel] {
 .header__contacts-phone {
   font-family: 'museo_sans_cyrl900';
   font-size: 30px;
+  /* text-decoration: none; */
   margin-top: 42px;
+  /* color: #000; */
 }
 
 .header__contacts-email {
@@ -392,7 +400,7 @@ a[href^=tel] {
   height: 42px;
   font-family: 'museo_sans_cyrl700';
   font-size: 14px;
-  line-height: 60px;
+  /* line-height: 60px; */
   padding: 0 10px;
   color: #333;
   background-color: #fff;
