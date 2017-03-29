@@ -116,6 +116,13 @@ $(".header__menu-hamburger").click(function() {
   }
 });
 
+$(".header__menu-link").click(function() {
+  if ($(".container").css("width") == "300px") {
+    $(".header__logo-link").css("backgroundPosition", "0 -144px");
+    $(".header__contacts").css("display", "none");
+  }
+});
+
 /* Отображение элементов при изменении размеров экрана */
 
 $(window).resize(function() {
