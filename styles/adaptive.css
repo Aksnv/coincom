@@ -349,8 +349,9 @@
 
   .header {
     position: absolute;
-    left: calc(50% - 180px);
-    width: 360px;
+    /* left: calc(50% - 180px);
+    width: 360px; */
+    width: 100%;
     box-shadow: none;
   }
 
@@ -457,7 +458,8 @@
 
   .about__service {
     top: 403px;
-    left: -28px;
+    left: 0;
+    width: 300px;
     text-align: center;
   }
 
@@ -509,8 +511,13 @@
     padding-bottom: 20px;
   }
 
+  .partnership-form {
+    width: 300px;
+  }
+
   .partnership-form__field {
     float: none;
+    margin-right: 0;
   }
 
   .partnership-form input {
@@ -547,6 +554,7 @@
 
   .how-it-works__step--1 {
     margin-left: 50px;
+    margin-right: 0;
   }
 
   .how-it-works__step--2 {
@@ -561,6 +569,7 @@
   .how-it-works__step--3 {
     margin-top: 298px;
     margin-left: 47px;
+    margin-right: 0;
   }
 
   .how-it-works__step--3::before {
@@ -578,9 +587,9 @@
 
   .how-it-works__advantage {
     position: relative;
-    left: calc(50% - 145px);
+    left: calc(50% - 150px);
     bottom: -238px;
-    width: 282px;
+    width: 300px;
     text-align: center;
   }
 
