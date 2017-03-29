@@ -54,7 +54,7 @@
     <div class="container">
       <div class="partnership__inner">
         <h2>Сотрудничество</h2>
-        <p>Хотите стать нашим партнёром? Отправьте заявку на сотрудничество.</p>
+        <p>Хотите стать нашим партнёром? Отправьте заявку на сотрудничество</p>
         <form class="partnership-form" name="partnership-form" action="partnership.php" method="post">
           <div class="partnership-form__field">
             <label for="partnership-form__company">Компания</label>
@@ -104,8 +104,9 @@
     <h2>Адреса мест установки терминалов</h2>
     <div class="terminals__map-mask"></div>
     <div id="terminals__map"></div>
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="terminals__location">
+      <div class="container">
         <button class="terminals__location-button terminals__location-button--open">Свернуть список</button>
         <ul class="terminals__location-list">
           <li id="terminal">
@@ -154,7 +155,8 @@
           </li>
         </ul>
       </div>
-    </div>
+      </div>
+    <!-- </div> -->
   </section>
 
   <section id="offer" class="offer">
@@ -384,6 +386,7 @@
 
           var infowindow = new google.maps.InfoWindow({
                content: contentString
+               /*position: {lat: (55.64743 + 0.03), lng: (37.595718 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker, 'click', function() {
@@ -412,7 +415,8 @@
                               '</div>';
 
           var infowindow2 = new google.maps.InfoWindow({
-               content: contentString2
+               content: contentString2/*,
+               position: {lat: (55.664040 + 0.03), lng: (37.627655 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker2, 'click', function() {
@@ -441,7 +445,8 @@
                               '</div>';
 
           var infowindow3 = new google.maps.InfoWindow({
-               content: contentString3
+               content: contentString3/*,
+               position: {lat: (55.585974 + 0.03), lng: (37.722791 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker3, 'click', function() {
@@ -470,7 +475,8 @@
                               '</div>';
 
           var infowindow4 = new google.maps.InfoWindow({
-               content: contentString4
+               content: contentString4/*,
+               position: {lat: (55.898837 + 0.03), lng: (37.673530 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker4, 'click', function() {
@@ -499,7 +505,8 @@
                               '</div>';
 
           var infowindow5 = new google.maps.InfoWindow({
-               content: contentString5
+               content: contentString5/*,
+               position: {lat: (55.794769 + 0.03), lng: (37.246047 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker5, 'click', function() {
@@ -528,7 +535,8 @@
                               '</div>';
 
           var infowindow6 = new google.maps.InfoWindow({
-               content: contentString6
+               content: contentString6/*,
+               position: {lat: (55.586446 + 0.03), lng: (37.718993 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker6, 'click', function() {
@@ -557,7 +565,8 @@
                               '</div>';
 
           var infowindow7 = new google.maps.InfoWindow({
-               content: contentString7
+               content: contentString7/*,
+               position: {lat: (55.920010 + 0.03), lng: (37.708427 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker7, 'click', function() {
@@ -586,7 +595,8 @@
                               '</div>';
 
           var infowindow8 = new google.maps.InfoWindow({
-               content: contentString8
+               content: contentString8/*,
+               position: {lat: (55.659826 + 0.03), lng: (37.749501 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker8, 'click', function() {
@@ -615,7 +625,8 @@
                               '</div>';
 
           var infowindow9 = new google.maps.InfoWindow({
-               content: contentString9
+               content: contentString9/*,
+               position: {lat: (55.777367 + 0.03), lng: (37.523468 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker9, 'click', function() {
@@ -644,7 +655,8 @@
                               '</div>';
 
           var infowindow10 = new google.maps.InfoWindow({
-               content: contentString10
+               content: contentString10/*,
+               position: {lat: (55.820943 + 0.03), lng: (37.387979 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker10, 'click', function() {
@@ -673,7 +685,8 @@
                               '</div>';
 
           var infowindow11 = new google.maps.InfoWindow({
-               content: contentString11
+               content: contentString11/*,
+               position: {lat: (55.612217 + 0.03), lng: (37.607253 - 0.01)}*/
           });
 
           google.maps.event.addListener(marker11, 'click', function() {

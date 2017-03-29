@@ -1,9 +1,4 @@
 <?php
-
-  $to = "aksenov.mailbox@gmail.com";
-  $subject = "Новая заявка на сотрудничество";
-  $subject = "=?utf-8?B?".base64_encode($subject)."?=";
-  $headers = "From:aksenov.mailbox@gmail.com\r\nReply-To:aksenov.mailbox@gmail.com\r\nContent-type:text/plain;charset=utf-8\r\n";
   
   $company = htmlspecialchars($_POST["partnership-form__company"]);
   $name = htmlspecialchars($_POST["partnership-form__name"]);
@@ -11,7 +6,13 @@
   $phone = htmlspecialchars($_POST["partnership-form__phone"]);
   $comment = htmlspecialchars($_POST["partnership-form__comment"]);
 
-  if(!$company || !$name || !$email || !$phone || !$comment) {
+  $to = "aksenov.mailbox@gmail.com";
+  $subject = "Новая заявка на сотрудничество";
+  $subject = "=?utf-8?B?".base64_encode($subject)."?=";
+  /*$headers = "From:aksenov.mailbox@gmail.com\r\nReply-To:aksenov.mailbox@gmail.com\r\nContent-type:text/plain;charset=utf-8\r\n";*/
+  $headers = "From: " . strip_tags($email) . "\r\nReply-To: " . strip_tags($email) . "\r\nContent-type:text/plain;charset=utf-8\r\n";
+
+  if(!$company && !$name && !$email && !$phone && !$comment) {
     header("Location:error.html");
     exit;
   }

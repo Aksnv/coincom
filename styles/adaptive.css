@@ -48,12 +48,12 @@
     left: -43px;
     display: block;
     width: 751px;
-    min-height: 1080px; 
-    /* min-height: 800px; */
+    /* min-height: 1080px;  */
+    min-height: 800px; 
     font-family: 'museo_sans_cyrl700';
     font-size: 20px;
-    padding-top: 366px;
-    /* padding-top: 266px; */
+    /* padding-top: 366px; */
+    padding-top: 295px; 
     background-color: #fff;
   }
 
@@ -85,8 +85,8 @@
 
   .header__contacts--open {
     position: absolute;
-    top: 897px; 
-    /* top: 617px; */
+    /* top: 897px;  */
+    top: 655px; 
     left: calc(50% - 146px);
     margin-right: 0;
     z-index: 2;
@@ -261,17 +261,39 @@
   /* Terminals */
 
   #terminals__map {
-    left: calc(50% - 375px);
-    width: 750px;
+    /* left: calc(50% - 375px);
+    width: 750px; */
+    left: 0;
+    width: 100%;
   }
 
   .terminals__location {
-    left: -42px;
+    left: 0;
+    top: 101px;
+    width: 100%;
+    /* background-color: #fff; */
+    background-color: #e3e4e8;
+    border-bottom: 1px solid #fff;
+  }
+
+  .terminals__location > .container {
+    width: 665px;
+  }
+
+  .terminals__location::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #fab500;
   }
 
   .terminals__location-button,
   .terminals__location-list {
-    width: 750px;
+    width: 100%;
   }
 
   .terminals__location-button {
@@ -375,10 +397,12 @@
   .header__menu--open {
     left: -30px;
     width: 360px;
-    min-height: 568px;
+    min-height: 568px; 
+    /* min-height: 495px; */
     font-size: 15px;
     line-height: 40px;
-    padding-top: 187px;
+    /* padding-top: 187px; */
+    padding-top: 160px;
   }
 
   .header__menu li {
@@ -397,8 +421,15 @@
     display: none;
   }
 
+  .header__contacts-phone {
+    font-size: 25px;
+    text-align: center;
+  }
+
   .header__contacts--open {
-    top: 441px;
+    /* top: 441px; */
+    top: 355px;
+    width: 300px;
   }
 
   /* Promo */
@@ -608,7 +639,7 @@
   /* Terminals */
 
   .terminals {
-    min-height: 648px;
+    min-height: 650px;
   }
 
   .terminals h2 {
@@ -622,11 +653,18 @@
   #terminals__map,
   .terminals__location-button, 
   .terminals__location-list {
-    width: 360px;
+    /* width: 360px; */
+    width: 100%;
   }
 
   .terminals__location {
-    left: -30px;
+    top: 79px;
+    /* left: -30px; */
+    left: 0;
+  }
+
+  .terminals__location > .container {
+    width: 300px;
   }
 
   .terminals__location-button {
@@ -650,7 +688,7 @@
   }
 
   #terminals__map {
-    left: calc(50% - 180px);
+    /* left: calc(50% - 180px); */
     height: 569px;
   }
 
@@ -740,5 +778,32 @@
   .upstairs-block {
     display: none;
   }
+
+}
+
+@media screen and (max-width: 359px) {
+
+  /* Header */
+
+  .header__menu--open {
+    left: -10px;
+    width: 320px;
+  }
+
+  /* Terminals */
+
+  /* #terminals__map,
+  .terminals__location-button, 
+  .terminals__location-list {
+    width: 320px;
+  }
+  
+  .terminals__location {
+    left: -10px;
+  }
+  
+  #terminals__map {
+    left: calc(50% - 160px);
+  } */
 
 }

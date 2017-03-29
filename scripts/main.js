@@ -118,9 +118,19 @@ $(".header__menu-hamburger").click(function() {
 
 $(".header__menu-link").click(function() {
   if ($(".container").css("width") == "300px") {
-    $(".header__logo-link").css("backgroundPosition", "0 -144px");
-    $(".header__contacts").css("display", "none");
+    if ($(".header__menu").hasClass("header__menu--open")) {
+      $(".header__logo-link").css("backgroundPosition", "0 0");
+      $(".header__contacts").css("display", "block");
+    } else {
+      $(".header__logo-link").css("backgroundPosition", "0 -144px");
+      $(".header__contacts").css("display", "none");
+    }
   }
+});
+
+$(".header__menu-link").click(function() {
+  $(".header__menu-link").removeClass("header__menu-link--active");
+  $(this).addClass("header__menu-link--active");
 });
 
 /* Отображение элементов при изменении размеров экрана */
