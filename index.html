@@ -120,35 +120,35 @@
             <p class="mall-name">ТЦ &laquo;Вегас Москва&raquo;</p>
             <p class="mall-address">МКАД, 24-й километр</p>
           </li>
-          <li>
+          <li id="terminal4">
             <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
             <p class="mall-address">Пересечение 91 км МКАД и Осташковского шоссе</p>
           </li>
-          <li>
+          <li id="terminal5">
             <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
             <p class="mall-address">Новорижское шоссе, 9 км от МКАД</p>
           </li>
-          <li>
+          <li id="terminal6">
             <p class="mall-name">ТЦ &laquo;ТВОЙ ДОМ&raquo;</p>
             <p class="mall-address">МКАД, 24-й километр</p>
           </li>
-          <li>
+          <li id="terminal7">
             <p class="mall-name">ТЦ &laquo;Июнь&raquo;</p>
             <p class="mall-address">Московская область, г. Мытищи, ул. Мира, 51</p>
           </li>
-          <li>
+          <li id="terminal8">
             <p class="mall-name">ТЦ &laquo;Бум&raquo;</p>
             <p class="mall-address">ул. Перерва, 43, корп. 1</p>
           </li>
-          <li>
+          <li id="terminal9">
             <p class="mall-name">ТЦ &laquo;Хорошо&raquo;</p>
             <p class="mall-address">Хорошевское шоссе, 27</p>
           </li>
-          <li>
+          <li id="terminal10">
             <p class="mall-name">ТЦ &laquo;Вегас Крокус&raquo;</p>
-            <p class="mall-address">ул. Международная, 12</p>
+            <p class="mall-address">МКАД, 66-й километр</p>
           </li>
-          <li>
+          <li id="terminal11">
             <p class="mall-name">ТЦ &laquo;Колумбус&raquo;</p>
             <p class="mall-address">ул. Кировоградская, 13</p>
           </li>
@@ -366,7 +366,7 @@
               ]
           });
 
-          /*if (document.querySelector(".container").style.width == "1180px")*/
+          /*ТЦ Азовский*/
 
           var marker = new google.maps.Marker({
               position: {lat: 55.64743, lng: 37.595718},
@@ -395,6 +395,7 @@
             infowindow.open(map, marker);
           });
 
+          /*ТЦ Гудзон*/
 
           var marker2 = new google.maps.Marker({
               position: {lat: 55.664040, lng: 37.627655},
@@ -423,6 +424,7 @@
             infowindow2.open(map, marker2);
           });
 
+          /*ТЦ Вегас Москва*/
 
           var marker3 = new google.maps.Marker({
               position: {lat: 55.585974, lng: 37.722791},
@@ -449,6 +451,238 @@
           var terminal3 = document.getElementById('terminal3');
           terminal3.addEventListener('click', function() {
             infowindow3.open(map, marker3);
+          });
+
+          /*ТЦ Твой дом - Осташковское шоссе*/
+
+          var marker4 = new google.maps.Marker({
+              position: {lat: 55.898837, lng: 37.673530},
+              map: map,
+              title: 'ТЦ "ТВОЙ ДОМ" - Пересечение 91 км МКАД и Осташковского шоссе',
+              icon: 'images/marker.png'
+          });
+
+          var contentString4 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Твой дом&raquo;</h1>'+
+                              '<p><b>Адрес:</b> Осташковское ш., Мытищи, Московская обл., 127224</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://tvoydom.ru/" target="_blank">tvoydom.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 236-12-12</p>'+
+                              '</div>';
+
+          var infowindow4 = new google.maps.InfoWindow({
+               content: contentString4
+          });
+
+          google.maps.event.addListener(marker4, 'click', function() {
+            infowindow4.open(map, marker4);
+          });
+
+          var terminal4 = document.getElementById('terminal4');
+          terminal4.addEventListener('click', function() {
+            infowindow4.open(map, marker4);
+          });
+
+          /*ТЦ Твой дом - Новорижское шоссе*/
+
+          var marker5 = new google.maps.Marker({
+              position: {lat: 55.794769, lng: 37.246047},
+              map: map,
+              title: 'ТЦ "ТВОЙ ДОМ" - Новорижское шоссе, 9 км от МКАД',
+              icon: 'images/marker.png'
+          });
+
+          var contentString5 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Твой дом&raquo;</h1>'+
+                              '<p><b>Адрес:</b> 26-й км Новорижское шоссе, 9, Москва, г. Москва, 143421</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://tvoydom.ru/" target="_blank">tvoydom.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 236-13-15</p>'+
+                              '</div>';
+
+          var infowindow5 = new google.maps.InfoWindow({
+               content: contentString5
+          });
+
+          google.maps.event.addListener(marker5, 'click', function() {
+            infowindow5.open(map, marker5);
+          });
+
+          var terminal5 = document.getElementById('terminal5');
+          terminal5.addEventListener('click', function() {
+            infowindow5.open(map, marker5);
+          });
+
+          /*ТЦ Твой дом - МКАД 24-й км*/
+
+          var marker6 = new google.maps.Marker({
+              position: {lat: 55.586446, lng: 37.718993},
+              map: map,
+              title: 'ТЦ "ТВОЙ ДОМ" - МКАД, 24-й километр',
+              icon: 'images/marker.png'
+          });
+
+          var contentString6 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Твой дом&raquo;</h1>'+
+                              '<p><b>Адрес:</b> МКАД, 24-й км, Москва, Московская обл., 115582</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://tvoydom.ru/" target="_blank">tvoydom.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 727-16-42</p>'+
+                              '</div>';
+
+          var infowindow6 = new google.maps.InfoWindow({
+               content: contentString6
+          });
+
+          google.maps.event.addListener(marker6, 'click', function() {
+            infowindow6.open(map, marker6);
+          });
+
+          var terminal6 = document.getElementById('terminal6');
+          terminal6.addEventListener('click', function() {
+            infowindow6.open(map, marker6);
+          });
+
+          /*ТЦ Июнь*/
+
+          var marker7 = new google.maps.Marker({
+              position: {lat: 55.920010, lng: 37.708427},
+              map: map,
+              title: 'ТЦ "ИЮНЬ" - Московская область, г. Мытищи, ул. Мира, 51',
+              icon: 'images/marker.png'
+          });
+
+          var contentString7 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Июнь&raquo;</h1>'+
+                              '<p><b>Адрес:</b> ул. Мира, 51, Мытищи, Московская обл., 141021</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://june.ru/mitishi/" target="_blank">june.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 543-44-03</p>'+
+                              '</div>';
+
+          var infowindow7 = new google.maps.InfoWindow({
+               content: contentString7
+          });
+
+          google.maps.event.addListener(marker7, 'click', function() {
+            infowindow7.open(map, marker7);
+          });
+
+          var terminal7 = document.getElementById('terminal7');
+          terminal7.addEventListener('click', function() {
+            infowindow7.open(map, marker7);
+          });
+
+          /*ТЦ Бум*/
+
+          var marker8 = new google.maps.Marker({
+              position: {lat: 55.659826, lng: 37.749501},
+              map: map,
+              title: 'ТЦ "БУМ" - ул. Перерва, 43, корп. 1',
+              icon: 'images/marker.png'
+          });
+
+          var contentString8 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Бум&raquo;</h1>'+
+                              '<p><b>Адрес:</b> ул. Перерва, 43/1, Москва, г. Москва, 109341</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://bum-center.ru/" target="_blank">bum-center.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 783-02-47</p>'+
+                              '</div>';
+
+          var infowindow8 = new google.maps.InfoWindow({
+               content: contentString8
+          });
+
+          google.maps.event.addListener(marker8, 'click', function() {
+            infowindow8.open(map, marker8);
+          });
+
+          var terminal8 = document.getElementById('terminal8');
+          terminal8.addEventListener('click', function() {
+            infowindow8.open(map, marker8);
+          });
+
+          /*ТЦ Хорошо*/
+
+          var marker9 = new google.maps.Marker({
+              position: {lat: 55.777367, lng: 37.523468},
+              map: map,
+              title: 'ТЦ "ХОРОШО" - Хорошевское шоссе, 27',
+              icon: 'images/marker.png'
+          });
+
+          var contentString9 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Хорошо&raquo;</h1>'+
+                              '<p><b>Адрес:</b> Хорошевское ш., 27, Москва, 123007</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://horoshomall.ru/" target="_blank">horoshomall.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 587-73-07</p>'+
+                              '</div>';
+
+          var infowindow9 = new google.maps.InfoWindow({
+               content: contentString9
+          });
+
+          google.maps.event.addListener(marker9, 'click', function() {
+            infowindow9.open(map, marker9);
+          });
+
+          var terminal9 = document.getElementById('terminal9');
+          terminal9.addEventListener('click', function() {
+            infowindow9.open(map, marker9);
+          });
+
+          /*ТЦ Вегас Крокус*/
+
+          var marker10 = new google.maps.Marker({
+              position: {lat: 55.820943, lng: 37.387979},
+              map: map,
+              title: 'ТЦ "ВЕГАС КРОКУС" - МКАД, 66-й километр',
+              icon: 'images/marker.png'
+          });
+
+          var contentString10 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Вегас Крокус&raquo;</h1>'+
+                              '<p><b>Адрес:</b> МКАД 66 км, Москва, г. Москва, 143407</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://crocus-city.vegas-city.ru/" target="_blank">crocus-city.vegas-city.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 727-12-77</p>'+
+                              '</div>';
+
+          var infowindow10 = new google.maps.InfoWindow({
+               content: contentString10
+          });
+
+          google.maps.event.addListener(marker10, 'click', function() {
+            infowindow10.open(map, marker10);
+          });
+
+          var terminal10 = document.getElementById('terminal10');
+          terminal10.addEventListener('click', function() {
+            infowindow10.open(map, marker10);
+          });
+
+          /*ТЦ Колумбус*/
+
+          var marker11 = new google.maps.Marker({
+              position: {lat: 55.612217, lng: 37.607253},
+              map: map,
+              title: 'ТЦ "КОЛУМБУС" - ул. Кировоградская, 13',
+              icon: 'images/marker.png'
+          });
+
+          var contentString11 = '<div class="marker-info">'+
+                              '<h1>ТЦ &laquo;Колумбус&raquo;</h1>'+
+                              '<p><b>Адрес:</b> Кировоградская ул., 13A, Москва, 117519</p>'+
+                              '<p><b>Веб-сайт:</b> <a href="http://trc-columbus.ru/" target="_blank">trc-columbus.ru</a></p>'+
+                              '<p><b>Телефон:</b> 8 (495) 114-44-44</p>'+
+                              '</div>';
+
+          var infowindow11 = new google.maps.InfoWindow({
+               content: contentString11
+          });
+
+          google.maps.event.addListener(marker11, 'click', function() {
+            infowindow11.open(map, marker11);
+          });
+
+          var terminal11 = document.getElementById('terminal11');
+          terminal11.addEventListener('click', function() {
+            infowindow11.open(map, marker11);
           });
       }
   </script>
