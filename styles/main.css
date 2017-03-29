@@ -405,7 +405,9 @@ strong > a {
   color: #333;
   background-color: #fff;
   border: 3px solid #fff;
+  border-radius: 0;
   outline: none;
+  box-shadow: none;
   transition: 0.5s ease all;
 }
 
