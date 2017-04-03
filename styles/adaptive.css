@@ -229,7 +229,10 @@
   }
 
   .how-it-works::after {
-    display: none;
+    /* display: none; */
+    top: 950px;
+    height: 257px;
+    z-index: -2;
   }
 
   .how-it-works h2 {
@@ -316,6 +319,10 @@
   }
 
   /* Offer */
+
+  .offer {
+    background-color: #f6e5b6;
+  }
 
   .offer h2 {
     padding-top: 44px;
@@ -582,6 +589,10 @@
     bottom: 96px;
     transform: scale(0.57);
     z-index: 3;
+  }
+
+  .how-it-works::after {
+    display: none;
   }
 
   .how-it-works h2 {

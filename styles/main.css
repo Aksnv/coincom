@@ -470,7 +470,8 @@ strong > a {
   display: block;
   width: 100%;
   height: 151px;
-  background-color: #fab500;
+  /* background-color: #fab500; */
+  background-color: #f6e5b6;
 }
 
 .how-it-works h2 {
