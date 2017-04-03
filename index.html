@@ -422,6 +422,10 @@
               ]
           });
 
+          /*Информационные окна на карте*/
+
+          var infoWindowArray = [];
+
           /*ТЦ Азовский*/
 
           var marker = new google.maps.Marker({
@@ -443,12 +447,20 @@
                /*position: {lat: (55.64743 + 0.03), lng: (37.595718 - 0.01)}*/
           });
 
+          infoWindowArray.push(infowindow);
+
           google.maps.event.addListener(marker, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow.open(map, marker);
           });
 
           var terminal = document.getElementById('terminal');
           terminal.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow.open(map, marker);
           });
 
@@ -472,12 +484,20 @@
                content: contentString2
           });
 
+          infoWindowArray.push(infowindow2);
+
           google.maps.event.addListener(marker2, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow2.open(map, marker2);
           });
 
           var terminal2 = document.getElementById('terminal2');
           terminal2.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow2.open(map, marker2);
           });
 
@@ -501,12 +521,20 @@
                content: contentString3
           });
 
+          infoWindowArray.push(infowindow3);
+
           google.maps.event.addListener(marker3, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow3.open(map, marker3);
           });
 
           var terminal3 = document.getElementById('terminal3');
           terminal3.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow3.open(map, marker3);
           });
 
@@ -530,12 +558,20 @@
                content: contentString4
           });
 
+          infoWindowArray.push(infowindow4);
+
           google.maps.event.addListener(marker4, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow4.open(map, marker4);
           });
 
           var terminal4 = document.getElementById('terminal4');
           terminal4.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow4.open(map, marker4);
           });
 
@@ -559,12 +595,20 @@
                content: contentString5
           });
 
+          infoWindowArray.push(infowindow5);
+
           google.maps.event.addListener(marker5, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow5.open(map, marker5);
           });
 
           var terminal5 = document.getElementById('terminal5');
           terminal5.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow5.open(map, marker5);
           });
 
@@ -588,12 +632,20 @@
                content: contentString6
           });
 
+          infoWindowArray.push(infowindow6);
+
           google.maps.event.addListener(marker6, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow6.open(map, marker6);
           });
 
           var terminal6 = document.getElementById('terminal6');
           terminal6.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow6.open(map, marker6);
           });
 
@@ -617,12 +669,20 @@
                content: contentString7
           });
 
+          infoWindowArray.push(infowindow7);
+
           google.maps.event.addListener(marker7, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow7.open(map, marker7);
           });
 
           var terminal7 = document.getElementById('terminal7');
           terminal7.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow7.open(map, marker7);
           });
 
@@ -646,12 +706,20 @@
                content: contentString8
           });
 
+          infoWindowArray.push(infowindow8);
+
           google.maps.event.addListener(marker8, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow8.open(map, marker8);
           });
 
           var terminal8 = document.getElementById('terminal8');
           terminal8.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow8.open(map, marker8);
           });
 
@@ -675,12 +743,20 @@
                content: contentString9
           });
 
+          infoWindowArray.push(infowindow9);
+
           google.maps.event.addListener(marker9, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow9.open(map, marker9);
           });
 
           var terminal9 = document.getElementById('terminal9');
           terminal9.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow9.open(map, marker9);
           });
 
@@ -704,12 +780,20 @@
                content: contentString10
           });
 
+          infoWindowArray.push(infowindow10);
+
           google.maps.event.addListener(marker10, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow10.open(map, marker10);
           });
 
           var terminal10 = document.getElementById('terminal10');
           terminal10.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow10.open(map, marker10);
           });
 
@@ -733,12 +817,20 @@
                content: contentString11
           });
 
+          infoWindowArray.push(infowindow11);
+
           google.maps.event.addListener(marker11, 'click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow11.open(map, marker11);
           });
 
           var terminal11 = document.getElementById('terminal11');
           terminal11.addEventListener('click', function() {
+            for (var i = 0; i < infoWindowArray.length; i++) {
+              infoWindowArray[i].close();
+            }
             infowindow11.open(map, marker11);
           });
       }
