@@ -215,19 +215,19 @@ strong > a {
 }
 
 .header__contacts-email {
-  /* float: right;
+  float: right;
   font-family: 'museo_sans_cyrl700';
   font-size: 12px;
   line-height: 12px;
-  color: #f9b500; */
+  color: #f9b500; 
   position: absolute;
   top: 77px;
   right: 0;
 }
 
-/* .header__contacts-email:hover {
+.header__contacts-email:hover {
   opacity: 0.5;
-} */
+} 
 
 /* Promo */
 
